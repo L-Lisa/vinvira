@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vilka uppdrag kan ni ta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mötesbokningar, utskick, enklare design och textgranskning. Snabb hjälp, ofta inom 24 timmar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur prissätter ni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pris per uppdrag beroende på omfattning. Kontakta oss för en snabb offert."
+      }
+    }
+  ]
+}

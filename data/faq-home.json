@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad gör Vinvira?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi hjälper småföretagare och nyföretagare i Sverige med snabba hemsidor utan månadskostnader, enkel SEO från 500 kr/mån och flexibel administrativ support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur snabbt kan jag få en hemsida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De enklaste sidorna är ofta klara på under en vecka, beroende på omfattning."
+      }
+    }
+  ]
+}

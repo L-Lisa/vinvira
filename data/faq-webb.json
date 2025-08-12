@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ingår domän och hosting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Det kan ingå beroende på behov och vald lösning. Vi hjälper dig att välja rätt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan jag uppdatera min hemsida själv?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Välj antingen en stabil, underhållsfri lösning utan månadskostnader eller en användarvänlig plattform där du själv kan uppdatera innehållet. Vi guidar dig oavsett val."
+      }
+    }
+  ]
+}

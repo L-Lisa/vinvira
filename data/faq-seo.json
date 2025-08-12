@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hur skiljer sig engångsfix från prenumeration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engångsfix skapar en stabil teknisk grund (meta-taggar, bilder, interna länkar, laddtid). Prenumeration (500 kr/mån) innebär löpande förbättringar och månadsrapporter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ni garantera resultat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEO är långsiktigt och exakta placeringar kan inte garanteras, särskilt när du utför arbetet själv. Vi garanterar tydlig vägledning och stöd som hjälper dig skapa goda resultat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad är seomaskinen.se?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "seomaskinen.se är vårt enkla SEO-verktyg som visar grundläggande förbättringar. Vi kan utföra dem åt dig, eller lära dig göra dem själv."
+      }
+    }
+  ]
+}
