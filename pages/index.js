@@ -1,40 +1,10 @@
 import SeoHead from "@/components/SeoHead";
 import FAQ from "@/components/FAQ";
 import faqData from "@/data/faq-home.json";
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-function OrbsBG() {
-  return (
-    <div className="absolute inset-0 overflow-hidden -z-10">
-      {/* Large primary orb - top left */}
-      <div className="absolute -left-32 top-16 w-[600px] h-[600px] rounded-full blur-3xl animate-pulse"
-           style={{ 
-             background: 'radial-gradient(closest-side, rgba(134,86,241,0.40), rgba(134,86,241,0) 70%)',
-             animation: 'float 8s ease-in-out infinite'
-           }} />
-      
-      {/* Highlight orb - top right */}
-      <div className="absolute right-[-100px] -top-16 w-[400px] h-[400px] rounded-full blur-3xl animate-pulse"
-           style={{ 
-             background: 'radial-gradient(closest-side, rgba(0,224,255,0.35), rgba(0,224,255,0) 70%)',
-             animation: 'float 6s ease-in-out infinite reverse'
-           }} />
-      
-      {/* Accent orb - bottom left */}
-      <div className="absolute left-1/4 bottom-1/4 w-32 h-32 rounded-full blur-xl opacity-40"
-           style={{ 
-             background: 'radial-gradient(closest-side, rgba(255,182,163,0.30), transparent)',
-             animation: 'float 10s ease-in-out infinite'
-           }} />
-    </div>
-  );
-}
-
 export default function Home() {
-  const { scrollY } = useScroll();
-  const heroImageY = useTransform(scrollY, [0, 500], [0, -100]);
-  const heroTextY = useTransform(scrollY, [0, 300], [0, -50]);
 
   const schemaOrg = {
     "@context": "https://schema.org",
@@ -60,48 +30,58 @@ export default function Home() {
       />
 
       {/* HERO */}
-      <section className="relative bg-vin-bgDark text-vin-white min-h-screen flex items-center overflow-hidden">
-        <OrbsBG />
-        <div className="max-w-6xl mx-auto px-6 py-24 grid gap-12 md:grid-cols-2 items-center">
-          <motion.div 
-            initial={{opacity:0, y:20}} 
-            animate={{opacity:1, y:0}} 
-            transition={{duration:0.8, ease:"easeOut"}}
-            className="space-y-6"
-            style={{ y: heroTextY }}
+      <section className="relative overflow-hidden text-white min-h-screen" style={{ backgroundColor: 'transparent' }}>
+        {/* Background SVG as CSS background */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 w-full h-full"
+          style={{
+            backgroundImage: "url('/hero-vinvira-1920x1080-bg-dark.svg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
+          }}
+        />
+
+        <div className="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+          {/* Left column: text */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-xl mb-8 md:mb-0"
           >
-            <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] gradient-text">
-              Snabbt, prisvärd hemsida utan månadskostnad
+            <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] bg-clip-text text-transparent bg-gradient-to-r from-vin-primary via-vin-highlight to-vin-accent">
+              Snabba AI-hemsidor – utan månadskostnad, redo på en vecka
             </h1>
-            <p className="text-vin-white/90 md:text-lg leading-relaxed">
-              Snabb hemsida, enkel SEO och flexibel adminhjälp – utan krångel och till rätt pris.
+            <p className="mt-4 text-vin-haze/90 md:text-lg">
+              Prisvärda, snygga och fullt optimerade hemsidor för småföretagare och nyföretagare. Levererade snabbt – utan krångel.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out font-medium">
-                Boka möte
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary to-vin-accent text-white shadow-glow transition hover:-translate-y-0.5">
+                Boka gratis möte
               </a>
-              <a href="/webb" className="inline-flex items-center justify-center rounded-full px-6 py-4 bg-white/10 backdrop-blur border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-200 ease-in-out">
-                Se hur det funkar
+              <a href="/webb" className="inline-flex items-center justify-center rounded-full px-6 py-3 border border-white/20 bg-white/10 backdrop-blur hover:bg-white/15">
+                Se våra tjänster
               </a>
             </div>
           </motion.div>
-          
-          <motion.div 
-            initial={{opacity:0, scale:0.95}} 
-            animate={{opacity:1, scale:1}} 
-            transition={{duration:0.8, delay:0.1, ease:"easeOut"}}
-            className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl"
-            style={{ y: heroImageY }}
+
+          {/* Right column: foreground hero image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.98 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="relative w-full aspect-[16/10] rounded-2xl border border-white/10 overflow-hidden"
           >
             <Image
               src="/hero-vinvira-1920x1080.webp"
-              alt="Vinvira Hero Visual - Snabbt, prisvärd hemsida utan månadskostnad"
+              alt="Abstrakt AI-orb-bakgrund i Vinviras färger"
               fill
-              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
               priority
             />
-            {/* Subtle overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
           </motion.div>
         </div>
       </section>
@@ -162,8 +142,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Gradient Separator */}
+      <div className="h-px bg-gradient-to-r from-transparent via-vin-primary/30 to-transparent mx-6"></div>
+
       {/* Our Philosophy Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20 bg-white">
+      <section className="max-w-6xl mx-auto px-6 py-20 bg-vin-bgDark text-vin-white">
         <div className="grid gap-12 md:grid-cols-2 items-center">
           <motion.div 
             initial={{opacity:0, y:20}} 
@@ -171,13 +154,13 @@ export default function Home() {
             transition={{duration:0.6}}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-bold text-vin-text">Vår filosofi</h2>
-            <p className="text-vin-text/80 leading-relaxed">
+            <h2 className="text-3xl font-bold text-vin-white">Vår filosofi</h2>
+            <p className="text-vin-white/80 leading-relaxed">
               Vi tror på enkla, effektiva lösningar som ger resultat. Ingen onödig komplexitet, 
               bara smart teknik som hjälper ditt företag att växa online.
             </p>
             <div className="pt-4">
-              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out">
+              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-300 ease-out">
                 Läs mer
               </a>
             </div>
@@ -195,6 +178,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Gradient Separator */}
+      <div className="h-px bg-gradient-to-r from-transparent via-vin-highlight/30 to-transparent mx-6"></div>
+
       {/* Services */}
       <section className="max-w-6xl mx-auto px-6 py-20 bg-vin-bgLight">
         <div className="grid gap-10 md:grid-cols-3">
@@ -202,11 +188,11 @@ export default function Home() {
             initial={{opacity:0, y:20}} 
             whileInView={{opacity:1, y:0}} 
             transition={{duration:0.6}}
-            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300"
+            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300 hover:scale-105"
           >
-            <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow">
-              <h3 className="text-xl font-bold mb-3">Webb & hemsida</h3>
-              <p className="text-gray-600 mb-4">Snabba, stabila, enkla — utan månadskostnad.</p>
+            <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow hover:shadow-xl">
+              <h3 className="text-xl font-bold mb-3 text-vin-text">Webb & hemsida</h3>
+              <p className="text-vin-text/70 mb-4">Snabba, stabila, enkla — utan månadskostnad.</p>
               <a className="inline-block text-vin-primary underline hover:text-vin-highlight transition-colors" href="/webb">Läs mer</a>
             </div>
           </motion.div>
@@ -215,11 +201,11 @@ export default function Home() {
             initial={{opacity:0, y:20}} 
             whileInView={{opacity:1, y:0}} 
             transition={{duration:0.6, delay:0.1}}
-            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300"
+            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300 hover:scale-105"
           >
-            <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow">
-              <h3 className="text-xl font-bold mb-3">SEO</h3>
-              <p className="text-gray-600 mb-4">Engångsfix eller prenumeration från 500 kr/mån. Tydliga rapporter och råd.</p>
+            <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow hover:shadow-xl">
+              <h3 className="text-xl font-bold mb-3 text-vin-text">SEO</h3>
+              <p className="text-vin-text/70 mb-4">Engångsfix eller prenumeration från 500 kr/mån. Tydliga rapporter och råd.</p>
               <a className="inline-block text-vin-primary underline hover:text-vin-highlight transition-colors" href="/seo">Läs mer</a>
             </div>
           </motion.div>
@@ -228,25 +214,28 @@ export default function Home() {
             initial={{opacity:0, y:20}} 
             whileInView={{opacity:1, y:0}} 
             transition={{duration:0.6, delay:0.2}}
-            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300"
+            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300 hover:scale-105"
           >
-            <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow">
-              <h3 className="text-xl font-bold mb-3">Administrativ support</h3>
-              <p className="text-gray-600 mb-4">Mötesbokning, utskick, enklare design och textgranskning. Snabb hjälp.</p>
+            <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow hover:shadow-xl">
+              <h3 className="text-xl font-bold mb-3 text-vin-text">Administrativ support</h3>
+              <p className="text-vin-text/70 mb-4">Mötesbokning, utskick, enklare design och textgranskning. Snabb hjälp.</p>
               <a className="inline-block text-vin-primary underline hover:text-vin-highlight transition-colors" href="/admin">Läs mer</a>
             </div>
           </motion.div>
         </div>
       </section>
 
+      {/* Gradient Separator */}
+      <div className="h-px bg-gradient-to-r from-transparent via-vin-accent/30 to-transparent mx-6"></div>
+
       {/* FAQ */}
-      <section className="max-w-3xl mx-auto px-6 py-20 bg-white">
+      <section className="max-w-3xl mx-auto px-6 py-20 bg-vin-bgLight">
         <motion.div
           initial={{opacity:0, y:20}}
           whileInView={{opacity:1, y:0}}
           transition={{duration:0.6}}
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">Vanliga frågor</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-vin-text">Vanliga frågor</h2>
           <FAQ items={[
             { q: "Vad gör Vinvira?", a: "Vi hjälper småföretagare och nyföretagare i Sverige med snabba hemsidor utan månadskostnader, enkel SEO från 500 kr/mån och flexibel administrativ support." },
             { q: "Hur snabbt kan jag få en hemsida?", a: "De enklaste sidorna är ofta klara på under en vecka, beroende på omfattning." }
@@ -264,7 +253,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4">Redo att växa online?</h2>
           <p className="text-vin-white/80 mb-8 max-w-2xl mx-auto">Fyll i formuläret eller mejla <a className="underline hover:text-vin-highlight transition-colors" href="mailto:info@vinvira.se">info@vinvira.se</a>.</p>
-          <a href="mailto:info@vinvira.se" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out font-medium">
+          <a href="mailto:info@vinvira.se" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-300 ease-out font-medium">
             Kontakta oss
           </a>
         </motion.div>

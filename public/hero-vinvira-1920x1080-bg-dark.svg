@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg-dark" x1="0" y1="0" x2="0" y2="1080">
+      <stop offset="0%" stop-color="#0F0F1A"/>
+      <stop offset="100%" stop-color="#121729"/>
+    </linearGradient>
+
+    <!-- Orbs (radial gradients) -->
+    <radialGradient id="orb-primary" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8656F1" stop-opacity="0.72"/>
+      <stop offset="70%" stop-color="#8656F1" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#8656F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-highlight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E0FF" stop-opacity="0.68"/>
+      <stop offset="70%" stop-color="#00E0FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#00E0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-accent" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFB6A3" stop-opacity="0.52"/>
+      <stop offset="70%" stop-color="#FFB6A3" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FFB6A3" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soft glows -->
+    <filter id="blur-60" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" edgeMode="duplicate" />
+    </filter>
+    <filter id="blur-40" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" edgeMode="duplicate" />
+    </filter>
+
+    <!-- Subtle grid -->
+    <pattern id="grid-dark" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg-dark)"/>
+  <rect width="1920" height="1080" fill="url(#grid-dark)"/>
+
+  <!-- Orbs (right-heavy composition for two-column hero) -->
+  <g filter="url(#blur-60)">
+    <circle cx="1520" cy="160" r="320" fill="url(#orb-primary)"/>
+  </g>
+  <g filter="url(#blur-60)">
+    <circle cx="1680" cy="820" r="260" fill="url(#orb-highlight)"/>
+  </g>
+  <g filter="url(#blur-40)">
+    <circle cx="520" cy="740" r="220" fill="url(#orb-accent)"/>
+  </g>
+
+  <desc>Vinvira dark hero background: glowing radial orbs (purple, cyan, peach) on a dark gradient with a subtle grid. No text overlays or panels.</desc>
+</svg>

@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         vin: {
-          bgDark: '#000000',
-          bgLight: '#F9F5FF',
+          bgDark: '#0F0F1A',
+          bgLight: '#F9FAFB',
           primary: '#8656F1',
           secondary: '#14984FC',
           highlight: '#00E0FF',

@@ -20,7 +20,7 @@ export default function Header() {
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" className={`font-bold text-vin-primary transition-transform duration-300 ease-in-out ${
-          isScrolled ? 'scale-95' : 'scale-100'
+          isScrolled ? 'scale-96' : 'scale-100'
         }`}>
           VINVIRA
         </a>
@@ -29,7 +29,7 @@ export default function Header() {
           <a href="/seo" className="hover:text-vin-primary hover:shadow-glow transition-all duration-200">SEO</a>
           <a href="/admin" className="hover:text-vin-primary hover:shadow-glow transition-all duration-200">Admin</a>
           <a href="/projekt" className="hover:text-vin-primary hover:shadow-glow transition-all duration-200">Projekt</a>
-          <a href="#contact" className="px-3 py-1.5 rounded-full text-white bg-gradient-to-r from-vin-primary to-vin-secondary shadow-glow hover:shadow-glowSecondary hover:scale-105 transition-all duration-200">
+          <a href="#contact" className="px-3 py-1.5 rounded-full text-white bg-gradient-to-r from-vin-primary to-vin-highlight shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-300 ease-out">
             Boka möte
           </a>
         </nav>
