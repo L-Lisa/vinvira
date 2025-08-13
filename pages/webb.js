@@ -3,6 +3,26 @@ import FAQ from "@/components/FAQ";
 import faqData from "@/data/faq-webb.json";
 import { motion } from 'framer-motion';
 
+function OrbsBG() {
+  return (
+    <div className="absolute inset-0 overflow-hidden -z-10">
+      {/* Primary orb */}
+      <div className="absolute left-1/4 top-1/4 w-48 h-48 rounded-full blur-2xl opacity-30"
+           style={{ 
+             background: 'radial-gradient(closest-side, rgba(123,79,255,0.25), transparent)',
+             animation: 'float 8s ease-in-out infinite'
+           }} />
+      
+      {/* Accent orb */}
+      <div className="absolute right-1/4 bottom-1/4 w-32 h-32 rounded-full blur-xl opacity-25"
+           style={{ 
+             background: 'radial-gradient(closest-side, rgba(255,182,163,0.20), transparent)',
+             animation: 'float 6s ease-in-out infinite reverse'
+           }} />
+    </div>
+  );
+}
+
 export default function Webb() {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -22,8 +42,9 @@ export default function Webb() {
       />
       
       {/* Hero Section */}
-      <section className="px-6 py-20 bg-gradient-to-b from-vin-bgLight to-white">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="relative px-6 py-20 bg-gradient-to-b from-vin-bgLight to-white overflow-hidden">
+        <OrbsBG />
+        <div className="max-w-3xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{opacity:0, y:20}} 
             animate={{opacity:1, y:0}} 
@@ -74,7 +95,7 @@ export default function Webb() {
           <p className="text-gray-700">Har du ett samhällsprojekt som gör skillnad? Ibland bygger vi gratis hemsidor för initiativ med tydlig samhällsnytta.</p>
 
           <div className="mt-10 text-center">
-            <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-accent text-white shadow-glow hover:shadow-glowPink hover:scale-105 transition-all duration-200 ease-in-out font-medium">
+            <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out font-medium">
               Boka gratis möte
             </a>
           </div>

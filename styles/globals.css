@@ -5,7 +5,17 @@
 /* Base typography tweaks */
 html { scroll-behavior: smooth; }
 
-:root { --font-display: 'Space Grotesk', system-ui, sans-serif; }
+:root { 
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --vinvira-bg-dark: #0B0F19;
+  --vinvira-bg-light: #FDFDFE;
+  --vinvira-primary: #7B4FFF;
+  --vinvira-accent: #FFB6A3;
+  --vinvira-highlight: #00E0FF;
+  --vinvira-text-light: #FFFFFF;
+  --vinvira-text-dark: #1A1A1A;
+}
+
 .h1, h1, h2, h3, h4, h5 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02em; }
 
 /* Exception: h5 in long lists use Inter for better readability */
@@ -21,6 +31,11 @@ body { @apply bg-vin-bgLight text-vin-text; }
   66% { transform: translateY(-10px) rotate(-1deg); }
 }
 
+@keyframes glow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
 /* Smooth transitions for all interactive elements */
 * { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; }
 * { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
@@ -28,6 +43,26 @@ body { @apply bg-vin-bgLight text-vin-text; }
 
 /* Enhanced focus states for accessibility */
 button:focus-visible, a:focus-visible { 
-  outline: 2px solid #4857FF; 
+  outline: 2px solid var(--vinvira-primary); 
   outline-offset: 2px; 
+}
+
+/* Custom utility classes */
+.gradient-text {
+  background: linear-gradient(90deg, var(--vinvira-primary), var(--vinvira-highlight));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.orb-glow {
+  box-shadow: 0 0 40px rgba(123, 79, 255, 0.3);
+}
+
+.orb-glow-accent {
+  box-shadow: 0 0 40px rgba(255, 182, 163, 0.3);
+}
+
+.orb-glow-highlight {
+  box-shadow: 0 0 40px rgba(0, 224, 255, 0.3);
 }

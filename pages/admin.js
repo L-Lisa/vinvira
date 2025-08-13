@@ -3,6 +3,26 @@ import FAQ from "@/components/FAQ";
 import faqData from "@/data/faq-admin.json";
 import { motion } from 'framer-motion';
 
+function OrbsBG() {
+  return (
+    <div className="absolute inset-0 overflow-hidden -z-10">
+      {/* Accent orb */}
+      <div className="absolute left-1/3 top-1/4 w-44 h-44 rounded-full blur-2xl opacity-30"
+           style={{ 
+             background: 'radial-gradient(closest-side, rgba(255,182,163,0.25), transparent)',
+             animation: 'float 8s ease-in-out infinite'
+           }} />
+      
+      {/* Highlight orb */}
+      <div className="absolute right-1/3 bottom-1/4 w-36 h-36 rounded-full blur-xl opacity-25"
+           style={{ 
+             background: 'radial-gradient(closest-side, rgba(0,224,255,0.20), transparent)',
+             animation: 'float 10s ease-in-out infinite reverse'
+           }} />
+    </div>
+  );
+}
+
 export default function Admin() {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -22,8 +42,9 @@ export default function Admin() {
       />
       
       {/* Hero Section */}
-      <section className="px-6 py-20 bg-gradient-to-b from-vin-bgLight to-white">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="relative px-6 py-20 bg-gradient-to-b from-vin-bgLight to-white overflow-hidden">
+        <OrbsBG />
+        <div className="max-w-3xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{opacity:0, y:20}} 
             animate={{opacity:1, y:0}} 
@@ -51,7 +72,7 @@ export default function Admin() {
           transition={{duration:0.6}}
         >
           <div className="text-center mb-12">
-            <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-accent text-white shadow-glow hover:shadow-glowPink hover:scale-105 transition-all duration-200 ease-in-out font-medium">
+            <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out font-medium">
               Boka gratis möte
             </a>
           </div>
