@@ -7,13 +7,13 @@ html { scroll-behavior: smooth; }
 
 :root { 
   --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --vinvira-bg-dark: #0B0F19;
-  --vinvira-bg-light: #FDFDFE;
-  --vinvira-primary: #7B4FFF;
-  --vinvira-accent: #FFB6A3;
-  --vinvira-highlight: #00E0FF;
-  --vinvira-text-light: #FFFFFF;
-  --vinvira-text-dark: #1A1A1A;
+  --vin-bg-dark: #000000;
+  --vin-bg-light: #F9F5FF;
+  --vin-primary: #8656F1;
+  --vin-secondary: #14984FC;
+  --vin-accent: #F9F5FF;
+  --vin-text: #000000;
+  --vin-white: #FFFFFF;
 }
 
 .h1, h1, h2, h3, h4, h5 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02em; }
@@ -43,26 +43,26 @@ body { @apply bg-vin-bgLight text-vin-text; }
 
 /* Enhanced focus states for accessibility */
 button:focus-visible, a:focus-visible { 
-  outline: 2px solid var(--vinvira-primary); 
+  outline: 2px solid var(--vin-primary); 
   outline-offset: 2px; 
 }
 
 /* Custom utility classes */
 .gradient-text {
-  background: linear-gradient(90deg, var(--vinvira-primary), var(--vinvira-highlight));
+  background: linear-gradient(90deg, var(--vin-primary), var(--vin-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .orb-glow {
-  box-shadow: 0 0 40px rgba(123, 79, 255, 0.3);
+  box-shadow: 0 0 40px rgba(134, 86, 241, 0.3);
+}
+
+.orb-glow-secondary {
+  box-shadow: 0 0 40px rgba(20, 152, 252, 0.3);
 }
 
 .orb-glow-accent {
-  box-shadow: 0 0 40px rgba(255, 182, 163, 0.3);
-}
-
-.orb-glow-highlight {
-  box-shadow: 0 0 40px rgba(0, 224, 255, 0.3);
+  box-shadow: 0 0 40px rgba(249, 245, 255, 0.3);
 }
