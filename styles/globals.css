@@ -4,3 +4,30 @@
 
 /* Base typography tweaks */
 html { scroll-behavior: smooth; }
+
+:root { --font-display: 'Space Grotesk', system-ui, sans-serif; }
+.h1, h1, h2, h3, h4, h5 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02em; }
+
+/* Exception: h5 in long lists use Inter for better readability */
+h5.in-list { font-family: 'Inter', system-ui, sans-serif; }
+
+/* Global background and text defaults */
+body { @apply bg-vin-bgLight text-vin-text; }
+
+/* Floating orb animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-20px) rotate(1deg); }
+  66% { transform: translateY(-10px) rotate(-1deg); }
+}
+
+/* Smooth transitions for all interactive elements */
+* { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; }
+* { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+* { transition-duration: 200ms; }
+
+/* Enhanced focus states for accessibility */
+button:focus-visible, a:focus-visible { 
+  outline: 2px solid #4857FF; 
+  outline-offset: 2px; 
+}

@@ -1,6 +1,7 @@
 import SeoHead from "@/components/SeoHead";
 import FAQ from "@/components/FAQ";
 import faqData from "@/data/faq-webb.json";
+import { motion } from 'framer-motion';
 
 export default function Webb() {
   const serviceSchema = {
@@ -19,37 +20,75 @@ export default function Webb() {
         canonical="https://vinvira.se/webb"
         schemaJson={serviceSchema}
       />
-      <section className="px-6 py-16 max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4">Snabb och enkel hemsida för småföretag – utan månadskostnad eller krångel</h1>
-        <p className="text-gray-700 mb-6">
-          På Vinvira hjälper vi dig att komma online snabbt. Välj en prisvärd, stabil hemsida som kräver minimalt underhåll — eller en
-          lösning byggd på en användarvänlig plattform om du vill uppdatera själv.
-        </p>
+      
+      {/* Hero Section */}
+      <section className="px-6 py-20 bg-gradient-to-b from-vin-bgLight to-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <motion.h1 
+            initial={{opacity:0, y:20}} 
+            animate={{opacity:1, y:0}} 
+            transition={{duration:0.6}}
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
+            Snabb och enkel hemsida för småföretag – utan månadskostnad eller krångel
+          </motion.h1>
+          <motion.p 
+            initial={{opacity:0, y:20}} 
+            animate={{opacity:1, y:0}} 
+            transition={{duration:0.6, delay:0.1}}
+            className="text-gray-700 text-lg leading-relaxed"
+          >
+            På Vinvira hjälper vi dig att komma online snabbt. Välj en prisvärd, stabil hemsida som kräver minimalt underhåll — eller en
+            lösning byggd på en användarvänlig plattform om du vill uppdatera själv.
+          </motion.p>
+        </div>
+      </section>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-3">Så här går det till</h2>
-        <ol className="list-decimal list-inside space-y-2 text-gray-700">
-          <li><strong>Gratis startmöte</strong> – vi pratar om dina mål och idéer.</li>
-          <li><strong>Utkast & feedback</strong> – du ser ett förslag och ger feedback.</li>
-          <li><strong>Färdig leverans</strong> – vi publicerar din sida och hjälper dig komma igång.</li>
-        </ol>
+      {/* Content */}
+      <section className="px-6 py-16 max-w-3xl mx-auto bg-white">
+        <motion.div
+          initial={{opacity:0, y:20}}
+          whileInView={{opacity:1, y:0}}
+          transition={{duration:0.6}}
+        >
+          <h2 className="text-2xl font-semibold mt-10 mb-3">Så här går det till</h2>
+          <ol className="list-decimal list-inside space-y-2 text-gray-700">
+            <li><strong>Gratis startmöte</strong> – vi pratar om dina mål och idéer.</li>
+            <li><strong>Utkast & feedback</strong> – du ser ett förslag och ger feedback.</li>
+            <li><strong>Färdig leverans</strong> – vi publicerar din sida och hjälper dig komma igång.</li>
+          </ol>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-3">Vad som ingår</h2>
-        <ul className="list-disc list-inside space-y-1 text-gray-700">
-          <li>Mobilanpassad sida med upp till 5 undersidor</li>
-          <li>Grundläggande SEO (meta, alt-texter)</li>
-          <li>Enkel bildredigering</li>
-          <li>Uppladdning på din domän</li>
-        </ul>
+          <h2 className="text-2xl font-semibold mt-10 mb-3">Vad som ingår</h2>
+          <ul className="list-disc list-inside space-y-1 text-gray-700">
+            <li>Mobilanpassad sida med upp till 5 undersidor</li>
+            <li>Grundläggande SEO (meta, alt-texter)</li>
+            <li>Enkel bildredigering</li>
+            <li>Uppladdning på din domän</li>
+          </ul>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-3">Olika lösningar</h2>
-        <p className="text-gray-700"><strong>Snabb & prisvärd:</strong> underhållsfri lösning utan månadskostnad.</p>
-        <p className="text-gray-700"><strong>Plattform:</strong> användarvänlig editor där du kan uppdatera själv. Vi finns som stöd.</p>
+          <h2 className="text-2xl font-semibold mt-10 mb-3">Olika lösningar</h2>
+          <p className="text-gray-700"><strong>Snabb & prisvärd:</strong> underhållsfri lösning utan månadskostnad.</p>
+          <p className="text-gray-700"><strong>Plattform:</strong> användarvänlig editor där du kan uppdatera själv. Vi finns som stöd.</p>
 
-        <h2 className="text-2xl font-semibold mt-10 mb-3">Gratis hemsida för goda idéer</h2>
-        <p className="text-gray-700">Har du ett samhällsprojekt som gör skillnad? Ibland bygger vi gratis hemsidor för initiativ med tydlig samhällsnytta.</p>
+          <h2 className="text-2xl font-semibold mt-10 mb-3">Gratis hemsida för goda idéer</h2>
+          <p className="text-gray-700">Har du ett samhällsprojekt som gör skillnad? Ibland bygger vi gratis hemsidor för initiativ med tydlig samhällsnytta.</p>
 
-        <div className="mt-10">
-          <h2 className="text-2xl font-bold mb-4">Vanliga frågor</h2>
+          <div className="mt-10 text-center">
+            <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-accent text-white shadow-glow hover:shadow-glowPink hover:scale-105 transition-all duration-200 ease-in-out font-medium">
+              Boka gratis möte
+            </a>
+          </div>
+        </motion.div>
+
+        <div className="mt-16">
+          <motion.h2 
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            transition={{duration:0.6}}
+            className="text-2xl font-bold mb-6"
+          >
+            Vanliga frågor
+          </motion.h2>
           <FAQ items={[
             { q: "Ingår domän och hosting?", a: "Det kan ingå beroende på behov och vald lösning. Vi hjälper dig att välja rätt." },
             { q: "Kan jag uppdatera min hemsida själv?", a: "Ja. Välj underhållsfri lösning eller plattform som du själv kan uppdatera. Vi guidar dig oavsett val." }

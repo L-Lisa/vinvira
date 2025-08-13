@@ -1,6 +1,10 @@
 import "@/styles/globals.css";
 import { DefaultSeo } from "next-seo";
 import Layout from "@/components/Layout";
+import { Inter, Space_Grotesk } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
+const space = Space_Grotesk({ subsets: ['latin'], variable: '--font-display' });
 
 const SEO = {
   titleTemplate: "%s | Vinvira",
@@ -21,9 +25,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <div className={`${inter.className} ${space.variable}`}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </div>
     </>
   );
 }

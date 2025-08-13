@@ -31,7 +31,7 @@ export default function SEOPage() {
           <li><strong>Prenumeration (500 kr/mån)</strong> – löpande uppdateringar, sökordsarbete och månadsrapporter.</li>
         </ol>
 
-        <div className="p-4 mt-6 rounded-2xl bg-vinvira-beige">
+        <div className="p-4 mt-6 rounded-2xl bg-vin-haze">
           <p className="text-gray-800"><strong>Betalar du 3000 kr/mån för SEO idag?</strong> Låt oss jämföra — ofta kan vi leverera samma eller bättre värde för en tredjedel av priset.</p>
         </div>
 
@@ -44,7 +44,7 @@ export default function SEOPage() {
 
         <h2 className="text-2xl font-semibold mt-10 mb-3">Upptäck seomaskinen.se</h2>
         <p className="text-gray-700">
-          Vi tipsar om <a className="underline text-vinvira-primary" href="https://seomaskinen.se" target="_blank" rel="noreferrer">seomaskinen.se</a> – vårt enkla SEO-verktyg som visar grundläggande förbättringar. Vi kan utföra dem åt dig, eller lära dig göra dem själv.
+          Vi tipsar om <a className="underline text-vin-primary" href="https://seomaskinen.se" target="_blank" rel="noreferrer">seomaskinen.se</a> – vårt enkla SEO-verktyg som visar grundläggande förbättringar. Vi kan utföra dem åt dig, eller lära dig göra dem själv.
         </p>
 
         <div className="mt-10">
