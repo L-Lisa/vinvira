@@ -12,7 +12,8 @@ module.exports = {
           bgLight: '#F9F5FF',
           primary: '#8656F1',
           secondary: '#14984FC',
-          accent: '#F9F5FF',
+          highlight: '#00E0FF',
+          accent: '#FFB6A3',
           text: '#000000',
           white: '#FFFFFF'
         }
@@ -23,11 +24,11 @@ module.exports = {
       boxShadow: {
         soft: "0 8px 24px rgba(0,0,0,0.08)",
         glow: '0 10px 40px rgba(134,86,241,0.35)',
-        glowSecondary: '0 10px 40px rgba(20,152,252,0.35)',
-        glowAccent: '0 10px 40px rgba(249,245,255,0.35)',
+        glowHighlight: '0 10px 40px rgba(0,224,255,0.35)',
+        glowAccent: '0 10px 40px rgba(255,182,163,0.35)',
         'orb-glow': '0 0 40px rgba(134,86,241,0.3)',
-        'orb-glow-secondary': '0 0 40px rgba(20,152,252,0.3)',
-        'orb-glow-accent': '0 0 40px rgba(249,245,255,0.3)'
+        'orb-glow-highlight': '0 0 40px rgba(0,224,255,0.3)',
+        'orb-glow-accent': '0 0 40px rgba(255,182,163,0.3)'
       }
     }
   },

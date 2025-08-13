@@ -11,7 +11,8 @@ html { scroll-behavior: smooth; }
   --vin-bg-light: #F9F5FF;
   --vin-primary: #8656F1;
   --vin-secondary: #14984FC;
-  --vin-accent: #F9F5FF;
+  --vin-highlight: #00E0FF;
+  --vin-accent: #FFB6A3;
   --vin-text: #000000;
   --vin-white: #FFFFFF;
 }
@@ -49,20 +50,27 @@ button:focus-visible, a:focus-visible {
 
 /* Custom utility classes */
 .gradient-text {
-  background: linear-gradient(90deg, var(--vin-primary), var(--vin-secondary));
+  background: linear-gradient(90deg, var(--vin-primary), var(--vin-highlight), var(--vin-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-size: 200% 100%;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .orb-glow {
   box-shadow: 0 0 40px rgba(134, 86, 241, 0.3);
 }
 
-.orb-glow-secondary {
-  box-shadow: 0 0 40px rgba(20, 152, 252, 0.3);
+.orb-glow-highlight {
+  box-shadow: 0 0 40px rgba(0, 224, 255, 0.3);
 }
 
 .orb-glow-accent {
-  box-shadow: 0 0 40px rgba(249, 245, 255, 0.3);
+  box-shadow: 0 0 40px rgba(255, 182, 163, 0.3);
 }

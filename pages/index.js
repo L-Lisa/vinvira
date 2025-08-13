@@ -14,17 +14,17 @@ function OrbsBG() {
              animation: 'float 8s ease-in-out infinite'
            }} />
       
-      {/* Secondary orb - top right */}
+      {/* Highlight orb - top right */}
       <div className="absolute right-[-100px] -top-16 w-[400px] h-[400px] rounded-full blur-3xl animate-pulse"
            style={{ 
-             background: 'radial-gradient(closest-side, rgba(20,152,252,0.35), rgba(20,152,252,0) 70%)',
+             background: 'radial-gradient(closest-side, rgba(0,224,255,0.35), rgba(0,224,255,0) 70%)',
              animation: 'float 6s ease-in-out infinite reverse'
            }} />
       
       {/* Accent orb - bottom left */}
       <div className="absolute left-1/4 bottom-1/4 w-32 h-32 rounded-full blur-xl opacity-40"
            style={{ 
-             background: 'radial-gradient(closest-side, rgba(249,245,255,0.30), transparent)',
+             background: 'radial-gradient(closest-side, rgba(255,182,163,0.30), transparent)',
              animation: 'float 10s ease-in-out infinite'
            }} />
     </div>
@@ -74,10 +74,10 @@ export default function Home() {
               Snabbt, prisvärd hemsida utan månadskostnad
             </h1>
             <p className="text-vin-white/90 md:text-lg leading-relaxed">
-              Vi erbjuder allt designade hemsidor och sökmotoroptimering med fantastiska resultat.
+              Snabb hemsida, enkel SEO och flexibel adminhjälp – utan krångel och till rätt pris.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-secondary text-white shadow-glow hover:shadow-glowSecondary hover:scale-105 transition-all duration-200 ease-in-out font-medium">
+              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out font-medium">
                 Boka möte
               </a>
               <a href="/webb" className="inline-flex items-center justify-center rounded-full px-6 py-4 bg-white/10 backdrop-blur border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-200 ease-in-out">
@@ -94,8 +94,8 @@ export default function Home() {
             style={{ y: heroImageY }}
           >
             <Image
-              src="/hero-vinvira.png"
-              alt="Vinvira Hero Visual"
+              src="/hero-vinvira-1920x1080.webp"
+              alt="Vinvira Hero Visual - Snabbt, prisvärd hemsida utan månadskostnad"
               fill
               className="object-cover"
               priority
@@ -118,23 +118,23 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-vin-text">Hur vi jobbar</h2>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary to-vin-secondary text-white flex items-center justify-center font-bold text-sm">1</div>
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary to-vin-highlight text-white flex items-center justify-center font-bold text-sm">1</div>
                 <div className="flex-1">
-                  <div className="h-4 bg-gradient-to-r from-vin-primary/20 to-vin-secondary/20 rounded-full mb-2"></div>
+                  <div className="h-4 bg-gradient-to-r from-vin-primary/20 to-vin-highlight/20 rounded-full mb-2"></div>
                   <p className="text-vin-text/70 text-sm">Gratis startmöte och planering</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary to-vin-secondary text-white flex items-center justify-center font-bold text-sm">2</div>
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary to-vin-highlight text-white flex items-center justify-center font-bold text-sm">2</div>
                 <div className="flex-1">
-                  <div className="h-4 bg-gradient-to-r from-vin-primary/20 to-vin-secondary/20 rounded-full mb-2"></div>
+                  <div className="h-4 bg-gradient-to-r from-vin-primary/20 to-vin-highlight/20 rounded-full mb-2"></div>
                   <p className="text-vin-text/70 text-sm">Design och utveckling</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary to-vin-secondary text-white flex items-center justify-center font-bold text-sm">3</div>
+                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary to-vin-highlight text-white flex items-center justify-center font-bold text-sm">3</div>
                 <div className="flex-1">
-                  <div className="h-4 bg-gradient-to-r from-vin-primary/20 to-vin-secondary/20 rounded-full mb-2"></div>
+                  <div className="h-4 bg-gradient-to-r from-vin-primary/20 to-vin-highlight/20 rounded-full mb-2"></div>
                   <p className="text-vin-text/70 text-sm">Lansering och support</p>
                 </div>
               </div>
@@ -145,18 +145,18 @@ export default function Home() {
             initial={{opacity:0, scale:0.95}} 
             whileInView={{opacity:1, scale:1}} 
             transition={{duration:0.6, delay:0.2}}
-            className="relative aspect-[4/3] rounded-2xl bg-gradient-to-br from-vin-primary/10 to-vin-secondary/10 border border-vin-primary/20 overflow-hidden"
+            className="relative aspect-[4/3] rounded-2xl bg-gradient-to-br from-vin-primary/10 to-vin-highlight/10 border border-vin-primary/20 overflow-hidden"
           >
             {/* Abstract UI Illustration */}
             <div className="absolute inset-4 bg-vin-bgDark rounded-xl p-6">
               <div className="space-y-3">
                 <div className="h-3 bg-vin-primary/30 rounded-full"></div>
-                <div className="h-3 bg-vin-secondary/30 rounded-full w-3/4"></div>
+                <div className="h-3 bg-vin-highlight/30 rounded-full w-3/4"></div>
                 <div className="h-3 bg-vin-primary/30 rounded-full w-1/2"></div>
               </div>
               {/* Glowing orbs in illustration */}
-              <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-gradient-to-r from-vin-primary to-vin-secondary shadow-orb-glow"></div>
-              <div className="absolute bottom-4 left-4 w-4 h-4 rounded-full bg-gradient-to-r from-vin-secondary to-vin-primary shadow-orb-glow-secondary"></div>
+              <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-gradient-to-r from-vin-primary to-vin-highlight shadow-orb-glow"></div>
+              <div className="absolute bottom-4 left-4 w-4 h-4 rounded-full bg-gradient-to-r from-vin-highlight to-vin-accent shadow-orb-glow-highlight"></div>
             </div>
           </motion.div>
         </div>
@@ -177,7 +177,7 @@ export default function Home() {
               bara smart teknik som hjälper ditt företag att växa online.
             </p>
             <div className="pt-4">
-              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary to-vin-secondary text-white shadow-glow hover:shadow-glowSecondary hover:scale-105 transition-all duration-200 ease-in-out">
+              <a href="#contact" className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out">
                 Läs mer
               </a>
             </div>
@@ -190,7 +190,7 @@ export default function Home() {
             className="relative flex justify-center"
           >
             {/* Glowing orb */}
-            <div className="w-32 h-32 rounded-full bg-gradient-to-r from-vin-primary to-vin-secondary shadow-orb-glow animate-pulse"></div>
+            <div className="w-32 h-32 rounded-full bg-gradient-to-r from-vin-primary to-vin-highlight shadow-orb-glow animate-pulse"></div>
           </motion.div>
         </div>
       </section>
@@ -202,12 +202,12 @@ export default function Home() {
             initial={{opacity:0, y:20}} 
             whileInView={{opacity:1, y:0}} 
             transition={{duration:0.6}}
-            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-secondary/40 hover:from-vin-primary/60 hover:to-vin-secondary/60 transition-all duration-300"
+            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300"
           >
             <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow">
               <h3 className="text-xl font-bold mb-3">Webb & hemsida</h3>
               <p className="text-gray-600 mb-4">Snabba, stabila, enkla — utan månadskostnad.</p>
-              <a className="inline-block text-vin-primary underline hover:text-vin-secondary transition-colors" href="/webb">Läs mer</a>
+              <a className="inline-block text-vin-primary underline hover:text-vin-highlight transition-colors" href="/webb">Läs mer</a>
             </div>
           </motion.div>
           
@@ -215,12 +215,12 @@ export default function Home() {
             initial={{opacity:0, y:20}} 
             whileInView={{opacity:1, y:0}} 
             transition={{duration:0.6, delay:0.1}}
-            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-secondary/40 hover:from-vin-primary/60 hover:to-vin-secondary/60 transition-all duration-300"
+            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300"
           >
             <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow">
               <h3 className="text-xl font-bold mb-3">SEO</h3>
               <p className="text-gray-600 mb-4">Engångsfix eller prenumeration från 500 kr/mån. Tydliga rapporter och råd.</p>
-              <a className="inline-block text-vin-primary underline hover:text-vin-secondary transition-colors" href="/seo">Läs mer</a>
+              <a className="inline-block text-vin-primary underline hover:text-vin-highlight transition-colors" href="/seo">Läs mer</a>
             </div>
           </motion.div>
           
@@ -228,12 +228,12 @@ export default function Home() {
             initial={{opacity:0, y:20}} 
             whileInView={{opacity:1, y:0}} 
             transition={{duration:0.6, delay:0.2}}
-            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-secondary/40 hover:from-vin-primary/60 hover:to-vin-secondary/60 transition-all duration-300"
+            className="group rounded-2xl p-[1px] bg-gradient-to-r from-vin-primary/40 to-vin-highlight/40 hover:from-vin-primary/60 hover:to-vin-highlight/60 transition-all duration-300"
           >
             <div className="rounded-2xl bg-white group-hover:bg-white/90 transition-all duration-300 shadow-soft p-8 hover:shadow-glow">
               <h3 className="text-xl font-bold mb-3">Administrativ support</h3>
               <p className="text-gray-600 mb-4">Mötesbokning, utskick, enklare design och textgranskning. Snabb hjälp.</p>
-              <a className="inline-block text-vin-primary underline hover:text-vin-secondary transition-colors" href="/admin">Läs mer</a>
+              <a className="inline-block text-vin-primary underline hover:text-vin-highlight transition-colors" href="/admin">Läs mer</a>
             </div>
           </motion.div>
         </div>
@@ -263,8 +263,8 @@ export default function Home() {
           transition={{duration:0.6}}
         >
           <h2 className="text-3xl font-bold mb-4">Redo att växa online?</h2>
-          <p className="text-vin-white/80 mb-8 max-w-2xl mx-auto">Fyll i formuläret eller mejla <a className="underline hover:text-vin-secondary transition-colors" href="mailto:info@vinvira.se">info@vinvira.se</a>.</p>
-          <a href="mailto:info@vinvira.se" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-secondary text-white shadow-glow hover:shadow-glowSecondary hover:scale-105 transition-all duration-200 ease-in-out font-medium">
+          <p className="text-vin-white/80 mb-8 max-w-2xl mx-auto">Fyll i formuläret eller mejla <a className="underline hover:text-vin-highlight transition-colors" href="mailto:info@vinvira.se">info@vinvira.se</a>.</p>
+          <a href="mailto:info@vinvira.se" className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary to-vin-highlight text-white shadow-glow hover:shadow-glowHighlight hover:scale-105 transition-all duration-200 ease-in-out font-medium">
             Kontakta oss
           </a>
         </motion.div>
