@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Vinvira Color Gradients -->
+    <linearGradient id="orb-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8656F1"/> <!-- vin-primary -->
+      <stop offset="50%" stop-color="#00E0FF"/> <!-- vin-highlight -->
+      <stop offset="100%" stop-color="#FFB6A3"/> <!-- vin-accent -->
+    </linearGradient>
+    
+    <!-- Background gradient - REMOVED since we're not using it -->
+    
+    <!-- Glow filter for the orb -->
+    <filter id="orb-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" edgeMode="duplicate"/>
+      <feComposite in="SourceGraphic" operator="over"/>
+    </filter>
+    
+    <!-- Subtle grid pattern - REMOVED since we're not using it -->
+  </defs>
+  
+  <!-- Background - REMOVED to let hero background show through -->
+  
+  <!-- Main Orb with Wavy Lines -->
+  <g filter="url(#orb-glow)">
+    <!-- Central orb base -->
+    <circle cx="960" cy="540" r="400" fill="url(#orb-gradient)" opacity="0.8"/>
+    
+    <!-- Wavy horizontal lines creating the orb effect -->
+    <g opacity="0.9">
+      <!-- Top section lines -->
+      <path d="M 560 340 Q 800 320 960 340 T 1360 340" stroke="url(#orb-gradient)" stroke-width="3" fill="none" opacity="0.7"/>
+      <path d="M 580 360 Q 800 340 960 360 T 1340 360" stroke="url(#orb-gradient)" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M 600 380 Q 800 360 960 380 T 1320 380" stroke="url(#orb-gradient)" stroke-width="3" fill="none" opacity="0.9"/>
+      
+      <!-- Upper middle section -->
+      <path d="M 620 400 Q 800 380 960 400 T 1300 400" stroke="url(#orb-gradient)" stroke-width="4" fill="none" opacity="1"/>
+      <path d="M 640 420 Q 800 400 960 420 T 1280 420" stroke="url(#orb-gradient)" stroke-width="4" fill="none" opacity="1"/>
+      <path d="M 660 440 Q 800 420 960 440 T 1260 440" stroke="url(#orb-gradient)" stroke-width="4" fill="none" opacity="1"/>
+      
+      <!-- Middle section (thickest lines) -->
+      <path d="M 680 460 Q 800 440 960 460 T 1240 460" stroke="url(#orb-gradient)" stroke-width="5" fill="none" opacity="1"/>
+      <path d="M 700 480 Q 800 460 960 480 T 1220 480" stroke="url(#orb-gradient)" stroke-width="5" fill="none" opacity="1"/>
+      <path d="M 720 500 Q 800 480 960 500 T 1200 500" stroke="url(#orb-gradient)" stroke-width="5" fill="none" opacity="1"/>
+      
+      <!-- Lower middle section -->
+      <path d="M 740 520 Q 800 500 960 520 T 1180 520" stroke="url(#orb-gradient)" stroke-width="4" fill="none" opacity="1"/>
+      <path d="M 760 540 Q 800 520 960 540 T 1160 540" stroke="url(#orb-gradient)" stroke-width="4" fill="none" opacity="1"/>
+      <path d="M 780 560 Q 800 540 960 560 T 1140 560" stroke="url(#orb-gradient)" stroke-width="4" fill="none" opacity="1"/>
+      
+      <!-- Bottom section lines -->
+      <path d="M 800 580 Q 800 560 960 580 T 1120 580" stroke="url(#orb-gradient)" stroke-width="3" fill="none" opacity="0.9"/>
+      <path d="M 820 600 Q 800 580 960 600 T 1100 600" stroke="url(#orb-gradient)" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M 840 620 Q 800 600 960 620 T 1080 620" stroke="url(#orb-gradient)" stroke-width="3" fill="none" opacity="0.7"/>
+    </g>
+    
+    <!-- Additional accent lines for depth -->
+    <g opacity="0.6">
+      <path d="M 700 420 Q 800 400 960 420 T 1220 420" stroke="#FFB6A3" stroke-width="2" fill="none"/>
+      <path d="M 720 480 Q 800 460 960 480 T 1200 480" stroke="#00E0FF" stroke-width="2" fill="none"/>
+      <path d="M 740 540 Q 800 520 960 540 T 1180 540" stroke="#8656F1" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Floating accent orbs around the main orb -->
+  <g opacity="0.4">
+    <circle cx="1200" cy="300" r="60" fill="url(#orb-gradient)" filter="url(#orb-glow)"/>
+    <circle cx="700" cy="700" r="40" fill="url(#orb-gradient)" filter="url(#orb-glow)"/>
+    <circle cx="1400" cy="700" r="50" fill="url(#orb-gradient)" filter="url(#orb-glow)"/>
+  </g>
+  
+  <!-- Subtle glow effects -->
+  <circle cx="960" cy="540" r="450" fill="none" stroke="url(#orb-gradient)" stroke-width="2" opacity="0.1"/>
+  <circle cx="960" cy="540" r="500" fill="none" stroke="url(#orb-gradient)" stroke-width="1" opacity="0.05"/>
+  
+  <desc>Vinvira Hero Image: Abstract AI orb with wavy lines using Vinvira brand colors (purple, cyan, peach) - transparent background</desc>
+</svg>

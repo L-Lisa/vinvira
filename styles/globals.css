@@ -1,32 +1,238 @@
+/* Base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Base typography tweaks */
-html { scroll-behavior: smooth; }
+/* CSS Variables for Vinvira Design System */
+:root {
+  /* Primary Colors - WCAG AA Compliant */
+  --vin-primary-50: #f5f3ff;
+  --vin-primary-100: #ede9fe;
+  --vin-primary-200: #ddd6fe;
+  --vin-primary-300: #c4b5fd;
+  --vin-primary-400: #a78bfa;
+  --vin-primary-500: #8b5cf6;
+  --vin-primary-600: #7c3aed;
+  --vin-primary-700: #6d28d9;
+  --vin-primary-800: #5b21b6;
+  --vin-primary-900: #4c1d95;
 
-:root { 
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --vin-bg-dark: #0F0F1A;
-  --vin-bg-light: #F9FAFB;
-  --vin-primary: #8656F1;
-  --vin-secondary: #14984FC;
-  --vin-highlight: #00E0FF;
-  --vin-accent: #FFB6A3;
-  --vin-text: #000000;
+  /* Secondary Colors - WCAG AA Compliant */
+  --vin-secondary-50: #eff6ff;
+  --vin-secondary-100: #dbeafe;
+  --vin-secondary-200: #bfdbfe;
+  --vin-secondary-300: #93c5fd;
+  --vin-secondary-400: #60a5fa;
+  --vin-secondary-500: #3b82f6;
+  --vin-secondary-600: #2563eb;
+  --vin-secondary-700: #1d4ed8;
+  --vin-secondary-800: #1e40af;
+  --vin-secondary-900: #1e3a8a;
+
+  /* Accent Colors - WCAG AA Compliant */
+  --vin-accent-50: #fef2f2;
+  --vin-accent-100: #fee2e2;
+  --vin-accent-200: #fecaca;
+  --vin-accent-300: #fca5a5;
+  --vin-accent-400: #f87171;
+  --vin-accent-500: #ef4444;
+  --vin-accent-600: #dc2626;
+  --vin-accent-700: #b91c1c;
+  --vin-accent-800: #991b1b;
+  --vin-accent-900: #7f1d1d;
+
+  /* Neutral Colors - WCAG AA Compliant */
+  --vin-neutral-50: #f9fafb;
+  --vin-neutral-100: #f3f4f6;
+  --vin-neutral-200: #e5e7eb;
+  --vin-neutral-300: #d1d5db;
+  --vin-neutral-400: #9ca3af;
+  --vin-neutral-500: #6b7280;
+  --vin-neutral-600: #4b5563;
+  --vin-neutral-700: #374151;
+  --vin-neutral-800: #1f2937;
+  --vin-neutral-900: #111827;
+
+  /* Semantic Colors */
+  --vin-success: #10b981;
+  --vin-warning: #f59e0b;
+  --vin-error: #ef4444;
+  --vin-info: #3b82f6;
+
+  /* Legacy support (keeping for existing components) */
   --vin-white: #FFFFFF;
-  --vin-haze: #F9FAFB;
 }
 
-.h1, h1, h2, h3, h4, h5 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02em; }
+/* Focus ring colors for accessibility */
+:root {
+  --vin-focus-ring: var(--vin-primary-300);
+  --vin-focus-ring-light: var(--vin-primary-200);
+}
+
+/* Base body styles with beautiful typography */
+body {
+  background-color: var(--vin-neutral-50);
+  color: var(--vin-neutral-900);
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced typography with proper line heights */
+.h1, h1, h2, h3, h4, h5 { 
+  font-family: 'Space Grotesk', system-ui, sans-serif; 
+  letter-spacing: -0.02em; 
+  line-height: 1.2; /* Better readability */
+}
 
 /* Exception: h5 in long lists use Inter for better readability */
-h5.in-list { font-family: 'Inter', system-ui, sans-serif; }
+h5.in-list { 
+  font-family: 'Inter', system-ui, sans-serif; 
+  line-height: 1.5;
+}
 
-/* Global background and text defaults */
-body { @apply bg-vin-bgLight text-vin-text; }
+/* Beautiful scroll behavior */
+html { 
+  scroll-behavior: smooth; 
+  font-size: 16px; /* Base font size for proper scaling */
+}
 
-/* Floating orb animations with subtle depth (max 10px parallax) */
+/* Container for mobile-first responsive design */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Enhanced focus management for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--vin-focus-ring);
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+/* Remove default focus styles */
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Skip link for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--vin-primary-600);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Gradient text utility with beautiful animation */
+.gradient-text {
+  background: linear-gradient(135deg, var(--vin-primary-500), var(--vin-secondary-500), var(--vin-accent-500));
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 4s ease-in-out infinite;
+  will-change: background-position;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+/* Orb glow effects with beautiful animations */
+.orb-glow {
+  box-shadow: 
+    0 0 20px rgba(139, 92, 246, 0.3),
+    0 0 40px rgba(139, 92, 246, 0.2),
+    0 0 60px rgba(139, 92, 246, 0.1);
+  animation: orb-breathe 6s ease-in-out infinite;
+}
+
+.orb-glow-secondary {
+  box-shadow: 
+    0 0 20px rgba(59, 130, 246, 0.3),
+    0 0 40px rgba(59, 130, 246, 0.2),
+    0 0 60px rgba(59, 130, 246, 0.1);
+  animation: orb-glow 4s ease-in-out infinite;
+}
+
+.orb-glow-accent {
+  box-shadow: 
+    0 0 20px rgba(239, 68, 68, 0.3),
+    0 0 40px rgba(239, 68, 68, 0.2),
+    0 0 60px rgba(239, 68, 68, 0.1);
+  animation: orb-pulse 5s ease-in-out infinite;
+}
+
+@keyframes orb-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+@keyframes orb-glow {
+  0%, 100% { opacity: 0.4; filter: blur(0px); }
+  50% { opacity: 0.8; filter: blur(1px); }
+}
+
+@keyframes orb-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.02); opacity: 0.9; }
+}
+
+/* Beautiful floating animations */
 @keyframes float {
   0%, 100% { 
     transform: translateY(0px) translateZ(0) rotate(0deg); 
@@ -53,46 +259,120 @@ body { @apply bg-vin-bgLight text-vin-text; }
   }
 }
 
-/* Smooth transitions for all interactive elements */
-* { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; }
-* { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-* { transition-duration: 200ms; }
-
-/* Enhanced focus states for accessibility */
-button:focus-visible, a:focus-visible { 
-  outline: 2px solid var(--vin-primary); 
-  outline-offset: 2px; 
+/* Smooth transitions for interactive elements only */
+button, a, input, textarea, select, [tabindex] { 
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  transition-duration: 200ms; 
 }
 
-/* Custom utility classes */
-/* Enhanced gradient text animation */
-.gradient-text {
-  background: linear-gradient(90deg, var(--vin-primary), var(--vin-highlight), var(--vin-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-size: 300% 100%;
-  animation: gradient-shift 4s ease-in-out infinite;
-  position: relative;
-}
-
-@keyframes gradient-shift {
-  0%, 100% { 
-    background-position: 0% 50%; 
-  }
-  50% { 
-    background-position: 100% 50%; 
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
-.orb-glow {
-  box-shadow: 0 0 40px rgba(134, 86, 241, 0.3);
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --vin-primary-500: #7c3aed;
+    --vin-primary-600: #6d28d9;
+    --vin-secondary-500: #2563eb;
+    --vin-secondary-600: #1d4ed8;
+    --vin-neutral-50: #ffffff;
+    --vin-neutral-900: #000000;
+  }
+  
+  .bg-white {
+    background-color: #ffffff !important;
+  }
+  
+  .text-vin-neutral-700 {
+    color: #000000 !important;
+  }
 }
 
-.orb-glow-highlight {
+/* Print styles */
+@media print {
+  .skip-link,
+  .sticky,
+  .fixed {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vin-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vin-neutral-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vin-neutral-400);
+}
+
+/* Focus ring utility classes */
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300;
+}
+
+.focus-ring-light {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-200;
+}
+
+/* Improved button focus states */
+.btn-focus {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:ring-offset-1;
+}
+
+/* Link focus states */
+.link-focus {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md focus-visible:px-1 focus-visible:py-1;
+}
+
+/* Beautiful accessible shadows */
+.shadow-accessible {
+  box-shadow: 
+    0 4px 6px -1px rgba(139, 92, 246, 0.1),
+    0 2px 4px -1px rgba(139, 92, 246, 0.06),
+    0 0 0 1px rgba(139, 92, 246, 0.1);
+}
+
+.shadow-accessible-lg {
+  box-shadow: 
+    0 10px 15px -3px rgba(139, 92, 246, 0.1),
+    0 4px 6px -2px rgba(139, 92, 246, 0.05),
+    0 0 0 1px rgba(139, 92, 246, 0.1);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+}
+
+.shadow-glow-highlight {
   box-shadow: 0 0 40px rgba(0, 224, 255, 0.3);
-}
-
-.orb-glow-accent {
-  box-shadow: 0 0 40px rgba(255, 182, 163, 0.3);
 }
