@@ -77,7 +77,11 @@ module.exports = {
           info: '#3B82F6',
           
           // Legacy support (keeping for existing components)
-          white: '#FFFFFF'
+          white: '#FFFFFF',
+          
+          // Special harmony colors
+          peachfuzz: '#FFB6A3',
+          cyan: '#00E0FF'
         }
       },
       // Enhanced shadows for better depth perception
@@ -126,6 +130,11 @@ module.exports = {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
         'bounce-gentle': 'bounceGentle 2s infinite',
+        'orb-breathe': 'orb-breathe 6s ease-in-out infinite',
+        'orb-glow': 'orb-glow 4s ease-in-out infinite',
+        'orb-logo': 'orb-logo 8s ease-in-out infinite',
+        'orb-rotate': 'orb-rotate 20s linear infinite',
+        'orb-rotate-reverse': 'orb-rotate-reverse 30s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -139,6 +148,26 @@ module.exports = {
         bounceGentle: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
+        },
+        'orb-breathe': {
+          '0%, 100%': { transform: 'scale(1)', opacity: '0.7' },
+          '50%': { transform: 'scale(1.02)', opacity: '0.9' },
+        },
+        'orb-glow': {
+          '0%, 100%': { opacity: '0.3', filter: 'blur(0px)' },
+          '50%': { opacity: '0.6', filter: 'blur(0.5px)' },
+        },
+        'orb-logo': {
+          '0%, 100%': { opacity: '0.2', transform: 'scale(1)' },
+          '50%': { opacity: '0.3', transform: 'scale(1.02)' },
+        },
+        'orb-rotate': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'orb-rotate-reverse': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
         },
       }
     }

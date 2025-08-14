@@ -86,11 +86,11 @@ export default function StickyCTA() {
 
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 100, opacity: 0 }}
+      initial={{ x: 100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: 100, opacity: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
+      className="fixed bottom-6 right-6 z-50"
       role="complementary"
       aria-label="Snabb kontakt"
     >
@@ -119,7 +119,7 @@ export default function StickyCTA() {
       </div>
 
       {/* Quick Contact for Mobile - Fixed touch target size */}
-      <div className="md:hidden mt-3 text-center">
+      <div className="md:hidden mt-3 flex justify-center">
         <a
           href="mailto:info@vinvira.se"
           className={`inline-flex items-center justify-center w-11 h-11 rounded-full border-2 transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${

@@ -9,7 +9,8 @@ const ServiceHero = ({
   icon, 
   gradientColors = ['from-vin-primary-500', 'to-vin-secondary-500'],
   ctaText = "Boka gratis möte",
-  ctaHref = "#contact"
+  ctaHref = "#contact",
+  customFeatures = null
 }) => {
   return (
     <section 
@@ -129,14 +130,25 @@ const ServiceHero = ({
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm sm:text-base"
             >
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-vin-success rounded-full" />
-                <span className="text-vin-neutral-600">Ingen månadskostnad</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-vin-warning rounded-full" />
-                <span className="text-vin-neutral-600">Snabb leverans</span>
-              </div>
+              {customFeatures ? (
+                customFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-center space-x-2">
+                    <div className={`w-2 h-2 rounded-full ${index === 0 ? 'bg-vin-success' : 'bg-vin-warning'}`} />
+                    <span className="text-vin-neutral-600">{feature}</span>
+                  </div>
+                ))
+              ) : (
+                <>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-vin-success rounded-full" />
+                    <span className="text-vin-neutral-600">Ingen månadskostnad</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-vin-warning rounded-full" />
+                    <span className="text-vin-neutral-600">Snabb leverans</span>
+                  </div>
+                </>
+              )}
             </motion.div>
           </motion.div>
 

@@ -2,27 +2,69 @@ import SeoHead from "@/components/SeoHead";
 import FAQ from "@/components/FAQ";
 import faqData from "@/data/faq-seo.json";
 import { motion } from 'framer-motion';
+import ServiceHero from '@/components/ServiceHero';
 import StickyCTA from "@/components/StickyCTA";
 
-function OrbsBG() {
+// Clean SEO Bullseye Icon Component
+function SEOTargetIcon() {
   return (
-    <div className="absolute inset-0 overflow-hidden -z-10" aria-hidden="true">
-      {/* Highlight orb */}
-      <div className="absolute left-1/3 top-1/3 w-40 h-40 rounded-full blur-2xl opacity-30"
-           style={{ 
-             background: 'radial-gradient(closest-side, rgba(14,165,233,0.25), transparent)',
-             animation: 'float 10s ease-in-out infinite'
-           }} />
+    <svg 
+      className="w-full h-full" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Outer ring */}
+      <circle 
+        cx="12" 
+        cy="12" 
+        r="10" 
+        stroke="currentColor" 
+        strokeWidth="2"
+        className="opacity-40"
+      />
       
-      {/* Primary orb */}
-      <div className="absolute right-1/3 bottom-1/3 w-36 h-36 rounded-full blur-xl opacity-25"
-           style={{ 
-             background: 'radial-gradient(closest-side, rgba(139,92,246,0.20), transparent)',
-             animation: 'float 8s ease-in-out infinite reverse'
-           }} />
-    </div>
+      {/* Middle ring */}
+      <circle 
+        cx="12" 
+        cy="12" 
+        r="7" 
+        stroke="currentColor" 
+        strokeWidth="2.5"
+        className="opacity-70"
+      />
+      
+      {/* Inner ring */}
+      <circle 
+        cx="12" 
+        cy="12" 
+        r="4" 
+        stroke="currentColor" 
+        strokeWidth="3"
+        className="opacity-90"
+      />
+      
+      {/* Center bullseye */}
+      <circle 
+        cx="12" 
+        cy="12" 
+        r="1.5" 
+        fill="currentColor"
+      />
+      
+      {/* Clean crosshairs */}
+      <path 
+        d="M12 3v3M12 18v3M3 12h3M18 12h3" 
+        stroke="currentColor" 
+        strokeWidth="2" 
+        strokeLinecap="round"
+        className="opacity-60"
+      />
+    </svg>
   );
 }
+
+
 
 export default function SEOPage() {
   const serviceSchema = {
@@ -42,31 +84,24 @@ export default function SEOPage() {
         schemaJson={serviceSchema}
       />
       
-      {/* HERO SECTION */}
-      <section className="relative px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-b from-vin-neutral-50 to-white overflow-hidden">
-        <OrbsBG />
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.h1 
-            initial={{opacity:0, y:20}} 
-            animate={{opacity:1, y:0}} 
-            transition={{duration:0.6}}
-            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-vin-neutral-900"
-          >
-            SEO för småföretagare – smart, enkelt och prisvärt
-          </motion.h1>
-          <motion.p 
-            initial={{opacity:0, y:20}} 
-            animate={{opacity:1, y:0}} 
-            transition={{duration:0.6, delay:0.1}}
-            className="text-vin-neutral-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto"
-          >
-            Vi gör SEO begripligt och hanterbart. Du kan välja en teknisk engångsfix eller en prisvärd prenumeration med månadsrapport och konkreta uppgifter att genomföra.
-          </motion.p>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <ServiceHero
+        title="AI-driven SEO för"
+        subtitle="tekniskt försprång"
+        description="Avancerad teknisk SEO-optimering med AI-analys och datadriven strategi. Från djupgående tekniska fixes till intelligenta ranking-strategier som levererar mätbara resultat för ditt företag."
+        serviceType="SEO & Teknisk Optimering"
+        icon={<SEOTargetIcon />}
+        gradientColors={['from-vin-secondary-500', 'to-vin-peachfuzz']}
+        ctaText="Få SEO-offert"
+        ctaHref="#contact"
+        customFeatures={[
+          "Billiga månadsprenumerationer eller större engångsfix",
+          "AI-driven teknisk analys"
+        ]}
+      />
 
       {/* MAIN CONTENT SECTION */}
-      <section className="px-4 sm:px-6 py-16 sm:py-20 max-w-4xl mx-auto bg-white">
+      <section className="px-4 sm:px-6 py-16 sm:py-20 max-w-6xl mx-auto bg-white">
         <motion.div
           initial={{opacity:0, y:20}}
           whileInView={{opacity:1, y:0}}
@@ -74,41 +109,133 @@ export default function SEOPage() {
           className="space-y-12"
         >
           {/* Options Section */}
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-vin-neutral-900">Våra alternativ</h2>
-            <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
-              <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-vin-primary-50 to-vin-primary-100 border border-vin-primary-200">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-vin-primary-500 to-vin-primary-600 flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+          <div className="text-center mb-12 sm:mb-16">
+            <motion.h2 
+              initial={{opacity:0, y:20}} 
+              whileInView={{opacity:1, y:0}} 
+              transition={{duration:0.6}}
+              className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
+            >
+              Våra SEO-alternativ
+            </motion.h2>
+            <motion.p 
+              initial={{opacity:0, y:20}} 
+              whileInView={{opacity:1, y:0}} 
+              transition={{duration:0.6, delay:0.1}}
+              className="text-vin-neutral-700 text-base sm:text-lg max-w-3xl mx-auto"
+            >
+              Välj mellan teknisk engångsfix eller kontinuerlig optimering med AI-driven analys
+            </motion.p>
+          </div>
+          
+          <div className="grid gap-8 md:gap-12 lg:gap-16 md:grid-cols-2">
+            <motion.div 
+              initial={{opacity:0, y:30}} 
+              whileInView={{opacity:1, y:0}} 
+              transition={{duration:0.7}}
+              className="group relative"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-br from-vin-primary-400/30 via-vin-secondary-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+              <div className="relative bg-white/90 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-primary-500/10 group-hover:-translate-y-4 group-hover:scale-105">
+                
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-gradient-to-br from-vin-primary-500 to-vin-primary-600 rounded-2xl font-bold text-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-vin-primary-400 to-vin-primary-500 rounded-2xl blur-sm opacity-30 -z-10 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-gradient-to-br from-vin-primary-100 to-vin-primary-200 rounded-2xl flex items-center justify-center shadow-sm">
+                      <svg className="w-6 h-6 text-vin-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-vin-primary-100 to-vin-primary-200 rounded-2xl blur-sm opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300"></div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-vin-neutral-900">Engångsfix</h3>
-                <p className="text-vin-neutral-700 mb-4">Teknisk optimering: meta-taggar, bilder, interna länkar och laddtid.</p>
-                <ul className="text-sm text-vin-neutral-600 space-y-1">
-                  <li>• Meta-taggar optimering</li>
-                  <li>• Bildoptimering</li>
-                  <li>• Interna länkar</li>
-                  <li>• Laddtid förbättringar</li>
-                </ul>
-              </div>
-              
-              <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-vin-secondary-50 to-vin-secondary-100 border border-vin-secondary-200">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-vin-secondary-500 to-vin-secondary-600 flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-primary-600 transition-colors duration-500">
+                    Teknisk Engångsfix
+                  </h3>
+                  <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
+                    Djupgående teknisk optimering med AI-analys: meta-taggar, bildkomprimering, interna länkar och prestandaförbättringar.
+                  </p>
+                  
+                  <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                      Meta-taggar & strukturdata
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                      AI-driven bildoptimering
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                      Core Web Vitals optimering
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-vin-neutral-900">Prenumeration</h3>
-                <p className="text-vin-neutral-700 mb-4">Från 500 kr/mån med löpande uppdateringar och månadsrapporter.</p>
-                <ul className="text-sm text-vin-neutral-600 space-y-1">
-                  <li>• Löpande uppdateringar</li>
-                  <li>• Sökordsarbete</li>
-                  <li>• Månadsrapporter</li>
-                  <li>• Strategisk rådgivning</li>
-                </ul>
               </div>
-            </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{opacity:0, y:30}} 
+              whileInView={{opacity:1, y:0}} 
+              transition={{duration:0.7, delay:0.2}}
+              className="group relative"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-br from-vin-secondary-400/30 via-vin-peachfuzz/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+              <div className="relative bg-white/90 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-secondary-500/10 group-hover:-translate-y-4 group-hover:scale-105">
+                
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-gradient-to-br from-vin-secondary-500 to-vin-secondary-600 rounded-2xl font-bold text-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-vin-secondary-400 to-vin-secondary-500 rounded-2xl blur-sm opacity-30 -z-10 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-gradient-to-br from-vin-secondary-100 to-vin-secondary-200 rounded-2xl flex items-center justify-center shadow-sm">
+                      <svg className="w-6 h-6 text-vin-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-vin-secondary-100 to-vin-secondary-200 rounded-2xl blur-sm opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-500">
+                    AI-driven Prenumeration
+                  </h3>
+                  <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
+                    Från 500 kr/mån med kontinuerlig AI-analys, intelligenta ranking-strategier och detaljerade månadsrapporter.
+                  </p>
+                  
+                  <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                      AI-driven keyword-analys
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                      Intelligenta ranking-strategier
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                      Automatiserade rapporter
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
           </div>
 
           {/* Comparison Box */}
@@ -120,8 +247,8 @@ export default function SEOPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-vin-neutral-900">Betalar du 3000 kr/mån för SEO idag?</h3>
-                <p className="text-vin-neutral-700">Låt oss jämföra — ofta kan vi leverera samma eller bättre värde för en tredjedel av priset.</p>
+                <h3 className="text-lg font-semibold mb-2 text-vin-neutral-900">Betalar du över 3000 kr/mån för SEO idag?</h3>
+                <p className="text-vin-neutral-700">Låt oss jämföra — Det tycker vi är för mycket om man kan använda AI, prata med oss. Ofta kan vi leverera samma eller bättre värde för en tredjedel av priset.</p>
               </div>
             </div>
           </div>
@@ -162,60 +289,92 @@ export default function SEOPage() {
             </div>
           </div>
 
-          {/* SEO Tool Section */}
-          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-vin-neutral-50 to-vin-secondary-50 border border-vin-neutral-200">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-vin-neutral-900">Upptäck seomaskinen.se</h2>
-            <p className="text-vin-neutral-700 mb-4">
-              Vi tipsar om <a className="underline text-vin-secondary-600 hover:text-vin-secondary-700 transition-colors" href="https://seomaskinen.se" target="_blank" rel="noreferrer">seomaskinen.se</a> – vårt enkla SEO-verktyg som visar grundläggande förbättringar. Vi kan utföra dem åt dig, eller lära dig göra dem själv.
-            </p>
-            <a 
-              href="https://seomaskinen.se" 
-              target="_blank" 
-              rel="noreferrer"
-              className="inline-flex items-center text-vin-secondary-600 font-semibold hover:text-vin-secondary-700 transition-colors duration-300"
-            >
-              Besök seomaskinen.se
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
+          {/* SEO Tool Interactive Card */}
+          <motion.div
+            initial={{opacity:0, y:30}}
+            whileInView={{opacity:1, y:0}}
+            transition={{duration:0.7}}
+            className="group relative"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-br from-vin-secondary-400/20 via-vin-primary-400/20 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+            
+            <div className="relative bg-white/95 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-secondary-500/10 group-hover:-translate-y-2 group-hover:scale-[1.02]">
+              
+              {/* Header with badge */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-vin-secondary-500 to-vin-primary-500 rounded-2xl flex items-center justify-center shadow-lg">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-300">
+                      SEO Maskinen
+                    </h3>
+                    <p className="text-sm text-vin-neutral-600">Vårt AI-drivna SEO-verktyg</p>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-r from-vin-secondary-100 to-vin-primary-100 px-3 py-1 rounded-full border border-vin-secondary-200">
+                  <span className="text-xs font-semibold text-vin-secondary-700">GRATIS VERKTYG</span>
+                </div>
+              </div>
 
-          {/* CTA Section */}
-          <div className="text-center pt-8">
-            <a 
-              href="#contact" 
-              className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
-            >
-              Boka gratis möte
-            </a>
-          </div>
+              {/* Description */}
+              <p className="text-vin-neutral-700 text-lg leading-relaxed mb-6 group-hover:text-vin-neutral-800 transition-colors duration-300">
+                Upptäck vårt enkla SEO-verktyg som ger dig grundläggande förbättringsförslag med AI-analys. Perfekt för småföretagare som vill ta kontroll över sin digitala närvaro.
+              </p>
+
+              {/* Features */}
+              <div className="grid gap-3 mb-8 sm:grid-cols-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full" />
+                  <span className="text-sm text-vin-neutral-600">AI-driven webbplatsanalys</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full" />
+                  <span className="text-sm text-vin-neutral-600">Enkla förbättringsförslag</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full" />
+                  <span className="text-sm text-vin-neutral-600">Gratis att använda</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full" />
+                  <span className="text-sm text-vin-neutral-600">Tydliga rapporter</span>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                <div className="text-sm text-vin-neutral-600">
+                  <span className="font-medium">Beta Version</span> - Vi kan hjälpa dig implementera förbättringarna
+                </div>
+                <a 
+                  href="https://seomaskin.se/" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-primary-600 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300 group-hover:from-vin-secondary-500 group-hover:to-vin-primary-500"
+                >
+                  <span>Testa verktyget</span>
+                  <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+
         </motion.div>
       </section>
 
       {/* FAQ SECTION */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 bg-vin-neutral-50">
-        <div className="text-center mb-12 sm:mb-16">
-          <motion.h2 
-            initial={{opacity:0, y:20}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.6}}
-            className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
-          >
-            Vanliga frågor om SEO
-          </motion.h2>
-          <motion.p 
-            initial={{opacity:0, y:20}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.6, delay:0.1}}
-            className="text-vin-neutral-700 text-base sm:text-lg max-w-2xl mx-auto"
-          >
-            Svar på de vanligaste frågorna om våra SEO-tjänster
-          </motion.p>
-        </div>
-        
-        <FAQ data={faqData} />
-      </section>
+      <FAQ 
+        data={faqData} 
+        title="Vanliga frågor om SEO"
+        subtitle="Svar på de vanligaste frågorna om våra SEO-tjänster"
+      />
 
       {/* Sticky CTA */}
       <StickyCTA />

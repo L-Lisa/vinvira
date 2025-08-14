@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function FAQ({ data, title = "Vanliga frågor", maxWidth = "max-w-4xl" }) {
+export default function FAQ({ data, title = "Vanliga frågor", subtitle = "Svar på de frågor vi får oftast", maxWidth = "max-w-4xl" }) {
   // Smart data handling - supports both Schema.org and simple Q&A formats
   const getQuestionText = (item) => {
     if (item.q) return item.q; // Simple format
@@ -34,7 +34,7 @@ export default function FAQ({ data, title = "Vanliga frågor", maxWidth = "max-w
           transition={{duration:0.6, delay:0.1}}
           className="text-vin-neutral-700 text-base sm:text-lg max-w-2xl mx-auto"
         >
-          Svar på de frågor vi får oftast
+          {subtitle}
         </motion.p>
       </div>
       

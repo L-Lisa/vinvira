@@ -29,7 +29,7 @@ export default function SeoHead({
       "availableLanguage": ["Swedish", "English"]
     },
     "sameAs": [
-      "https://seomaskinen.se"
+      "https://seomaskin.se/"
     ],
     "foundingDate": "2024",
     "areaServed": "SE"

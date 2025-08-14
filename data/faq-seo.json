@@ -20,10 +20,10 @@
     },
     {
       "@type": "Question",
-      "name": "Vad är seomaskinen.se?",
+      "name": "Vad är SEO Maskinen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "seomaskinen.se är vårt enkla SEO-verktyg som visar grundläggande förbättringar. Vi kan utföra dem åt dig, eller lära dig göra dem själv."
+        "text": "SEO Maskinen (seomaskin.se) är vårt AI-drivna SEO-verktyg som ger grundläggande förbättringsförslag. Vi kan implementera dessa åt dig eller hjälpa dig göra dem själv."
       }
     }
   ]

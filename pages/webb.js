@@ -36,78 +36,239 @@ export default function Webb() {
         ctaHref="#contact"
       />
 
-      {/* Process Steps Section */}
-      <section id="process" className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 bg-vin-neutral-50">
-        <div className="text-center mb-12 sm:mb-16">
-          <motion.h2 
-            initial={{opacity:0, y:20}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.6}}
-            className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
-          >
-            Så här går det till
-          </motion.h2>
-          <motion.p 
-            initial={{opacity:0, y:20}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.6, delay:0.1}}
-            className="text-vin-neutral-700 text-base sm:text-lg max-w-2xl mx-auto"
-          >
-            Enkelt och transparent process från idé till färdig hemsida
-          </motion.p>
+      {/* Process Steps Section - Premium Design Showcase */}
+      <section id="process" className="relative overflow-hidden bg-gradient-to-br from-vin-neutral-50 via-white to-vin-primary-50/30 py-20 sm:py-32" aria-labelledby="process-heading">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B5CF6' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '60px 60px'
+          }} />
         </div>
-        
-        <div className="grid gap-6 sm:gap-8 md:gap-12 md:grid-cols-3">
-          {/* Step 1 */}
-          <motion.div 
-            initial={{opacity:0, y:30}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.7}}
-            className="group relative"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-vin-primary-100/50 via-vin-secondary-100/50 to-vin-accent-100/50 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-            <div className="relative bg-white border border-vin-neutral-200 rounded-3xl p-6 sm:p-8 h-full hover:bg-white/90 transition-all duration-500 hover:shadow-accessible-lg hover:-translate-y-2">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-vin-primary-500 to-vin-secondary-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">1</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-vin-neutral-900 group-hover:text-vin-primary-600 transition-colors duration-300">Gratis startmöte</h3>
-              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Vi pratar om dina mål, idéer och vision för hemsidan. Ingen förpliktelse, bara en öppen dialog.</p>
-            </div>
-          </motion.div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+          {/* Header */}
+          <div className="text-center mb-16 sm:mb-24">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative inline-block"
+            >
+              <div className="absolute -inset-2 bg-gradient-to-r from-vin-primary-500/20 via-vin-secondary-500/20 to-vin-peachfuzz/20 rounded-2xl blur-xl" />
+              <h2 id="process-heading" className="relative text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-vin-neutral-900 via-vin-primary-600 to-vin-secondary-600 bg-clip-text text-transparent">
+                Så här går det till
+              </h2>
+            </motion.div>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-vin-neutral-700 text-lg sm:text-xl max-w-3xl mx-auto mt-8 leading-relaxed"
+            >
+              En transparent och smidig process som tar dig från idé till färdig hemsida på rekordtid
+            </motion.p>
+          </div>
           
-          {/* Step 2 */}
-          <motion.div 
-            initial={{opacity:0, y:30}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.7, delay:0.1}}
-            className="group relative"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-vin-secondary-100/50 via-vin-accent-100/50 to-vin-primary-100/50 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-            <div className="relative bg-white border border-vin-neutral-200 rounded-3xl p-6 sm:p-8 h-full hover:bg-white/90 transition-all duration-500 hover:shadow-accessible-lg hover:-translate-y-2">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-vin-secondary-500 to-vin-accent-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">2</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-300">Utkast & feedback</h3>
-              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Du ser ett förslag och ger feedback. Vi itererar tills du är helt nöjd med designen.</p>
-            </div>
-          </motion.div>
-          
-          {/* Step 3 */}
-          <motion.div 
-            initial={{opacity:0, y:30}} 
-            whileInView={{opacity:1, y:0}} 
-            transition={{duration:0.7, delay:0.2}}
-            className="group relative"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-vin-accent-100/50 via-vin-primary-100/50 to-vin-secondary-100/50 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-            <div className="relative bg-white border border-vin-neutral-200 rounded-3xl p-6 sm:p-8 h-full hover:bg-white/90 transition-all duration-500 hover:shadow-accessible-lg hover:-translate-y-2">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-vin-accent-500 to-vin-primary-500 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">3</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-vin-neutral-900 group-hover:text-vin-accent-600 transition-colors duration-300">Lansering</h3>
-              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Din hemsida lanseras och du får full kontroll. Vi står redo att hjälpa vid behov.</p>
-            </div>
-          </motion.div>
+          {/* Process Steps - Card Grid Design */}
+          <ol className="grid gap-8 md:gap-12 lg:gap-16 md:grid-cols-3" role="list" aria-label="Vårt arbetsflöde i tre steg">
+              {/* Step 1 - Enhanced Design */}
+              <motion.li 
+                initial={{ opacity: 0, y: 60, rotateY: -15 }} 
+                whileInView={{ opacity: 1, y: 0, rotateY: 0 }} 
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="group relative perspective-1000"
+              >
+                {/* Glow Effect */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-vin-primary-400/30 via-vin-secondary-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                
+                {/* Main Card */}
+                <div className="relative bg-white/90 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-primary-500/10 group-hover:-translate-y-4 group-hover:scale-105">
+                  
+                  {/* Step Header - Layered Harmony */}
+                  <div className="flex items-center gap-3 mb-8">
+                    {/* Number Badge with Glow */}
+                    <div className="relative">
+                      <div className="w-12 h-12 bg-gradient-to-br from-vin-primary-500 to-vin-primary-600 rounded-2xl font-bold text-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        1
+                      </div>
+                      {/* Subtle Glow Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-vin-primary-400 to-vin-primary-500 rounded-2xl blur-sm opacity-30 -z-10 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    {/* Icon Badge with Matching Treatment */}
+                    <div className="relative">
+                      <div className="w-12 h-12 bg-gradient-to-br from-vin-primary-100 to-vin-primary-200 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-sm">
+                        <svg className="w-6 h-6 text-vin-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                      </div>
+                      {/* Matching Subtle Glow */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-vin-primary-100 to-vin-primary-200 rounded-2xl blur-sm opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    {/* Step Indicator */}
+                    <div className="hidden sm:flex items-center text-sm text-vin-neutral-500 font-medium">
+                      STEG 1 AV 3
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-6">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-primary-600 transition-colors duration-500">
+                      Gratis startmöte
+                    </h3>
+                    <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
+                      Vi pratar om dina mål, idéer och vision för hemsidan. Ingen förpliktelse, bara en öppen dialog som sätter grunden för ditt projekt.
+                    </p>
+                    
+                    {/* Feature list */}
+                    <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                      <li className="flex items-center text-vin-neutral-600">
+                        <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                        Diskussion om behov & mål
+                      </li>
+                      <li className="flex items-center text-vin-neutral-600">
+                        <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                        Prisoffert & tidsram
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.li>
+              
+              {/* Step 2 - Enhanced Design */}
+              <motion.li 
+                initial={{ opacity: 0, y: 60, rotateY: -15 }} 
+                whileInView={{ opacity: 1, y: 0, rotateY: 0 }} 
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="group relative perspective-1000"
+              >
+                {/* Glow Effect */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-vin-secondary-400/30 via-vin-peachfuzz/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                
+                {/* Main Card */}
+                <div className="relative bg-white/90 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-secondary-500/10 group-hover:-translate-y-4 group-hover:scale-105">
+                  
+                  {/* Step Header - Layered Harmony */}
+                  <div className="flex items-center gap-3 mb-8">
+                    {/* Number Badge with Glow */}
+                    <div className="relative">
+                      <div className="w-12 h-12 bg-gradient-to-br from-vin-secondary-500 to-vin-secondary-600 rounded-2xl font-bold text-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        2
+                      </div>
+                      {/* Subtle Glow Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-vin-secondary-400 to-vin-secondary-500 rounded-2xl blur-sm opacity-30 -z-10 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    {/* Icon Badge with Matching Treatment */}
+                    <div className="relative">
+                      <div className="w-12 h-12 bg-gradient-to-br from-vin-secondary-100 to-vin-secondary-200 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-sm">
+                        <svg className="w-6 h-6 text-vin-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                      </div>
+                      {/* Matching Subtle Glow */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-vin-secondary-100 to-vin-secondary-200 rounded-2xl blur-sm opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    {/* Step Indicator */}
+                    <div className="hidden sm:flex items-center text-sm text-vin-neutral-500 font-medium">
+                      STEG 2 AV 3
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-6">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-500">
+                      Utkast & feedback
+                    </h3>
+                    <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
+                      Du ser ett förslag och ger feedback. Vi itererar tillsammans tills du är helt nöjd med designen och funktionaliteten.
+                    </p>
+                    
+                    {/* Feature list */}
+                    <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                      <li className="flex items-center text-vin-neutral-600">
+                        <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                        Interaktiv designprocess
+                      </li>
+                      <li className="flex items-center text-vin-neutral-600">
+                        <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                        Obegränsade revideringar
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.li>
+              
+              {/* Step 3 - Enhanced Design */}
+              <motion.li 
+                initial={{ opacity: 0, y: 60, rotateY: -15 }} 
+                whileInView={{ opacity: 1, y: 0, rotateY: 0 }} 
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="group relative perspective-1000"
+              >
+                {/* Glow Effect */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-vin-peachfuzz/30 via-vin-primary-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                
+                {/* Main Card */}
+                <div className="relative bg-white/90 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-peachfuzz/10 group-hover:-translate-y-4 group-hover:scale-105">
+                  
+                  {/* Step Header - Layered Harmony */}
+                  <div className="flex items-center gap-3 mb-8">
+                    {/* Number Badge with Glow */}
+                    <div className="relative">
+                      <div className="w-12 h-12 bg-gradient-to-br from-vin-peachfuzz to-vin-primary-500 rounded-2xl font-bold text-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        3
+                      </div>
+                      {/* Subtle Glow Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-vin-peachfuzz/80 to-vin-primary-400 rounded-2xl blur-sm opacity-30 -z-10 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    {/* Icon Badge with Matching Treatment */}
+                    <div className="relative">
+                      <div className="w-12 h-12 bg-gradient-to-br from-vin-peachfuzz/20 to-vin-peachfuzz/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-sm border border-vin-peachfuzz/20">
+                        <svg className="w-6 h-6 text-vin-peachfuzz" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                      </div>
+                      {/* Matching Subtle Glow */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-vin-peachfuzz/30 to-vin-peachfuzz/20 rounded-2xl blur-sm opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    {/* Step Indicator */}
+                    <div className="hidden sm:flex items-center text-sm text-vin-neutral-500 font-medium">
+                      STEG 3 AV 3
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="space-y-6">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-primary-600 transition-colors duration-500">
+                      Lansering & support
+                    </h3>
+                    <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
+                      Din hemsida lanseras och du får full kontroll. Vi står redo att hjälpa vid behov och säkerställer en smidig övergång.
+                    </p>
+                    
+                    {/* Feature list */}
+                    <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                      <li className="flex items-center text-vin-neutral-600">
+                        <div className="w-2 h-2 bg-vin-peachfuzz rounded-full mr-3" />
+                        Full äganderätt
+                      </li>
+                      <li className="flex items-center text-vin-neutral-600">
+                        <div className="w-2 h-2 bg-vin-peachfuzz rounded-full mr-3" />
+                        Efterföljande support
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </motion.li>
+            </ol>
+
+
         </div>
       </section>
 

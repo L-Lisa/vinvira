@@ -87,8 +87,8 @@ export default function Home() {
             }}
           >
             <MetaBalls
-              color="#00E0FF"
-              cursorBallColor="#FFB6A3"
+              color="#8B5CF6"
+              cursorBallColor="#3B82F6"
               cursorBallSize={2}
               ballCount={15}
               animationSize={30}

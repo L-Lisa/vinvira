@@ -58,6 +58,10 @@
   --vin-warning: #f59e0b;
   --vin-error: #ef4444;
   --vin-info: #3b82f6;
+  
+  /* Special Harmony Colors */
+  --vin-peachfuzz: #FFB6A3;
+  --vin-cyan: #00E0FF;
 
   /* Legacy support (keeping for existing components) */
   --vin-white: #FFFFFF;
@@ -172,9 +176,9 @@ select:focus:not(:focus-visible) {
   top: 6px;
 }
 
-/* Gradient text utility with beautiful animation */
+/* Gradient text utility with beautiful animation - now includes peachfuzz harmony */
 .gradient-text {
-  background: linear-gradient(135deg, var(--vin-primary-500), var(--vin-secondary-500), var(--vin-accent-500));
+  background: linear-gradient(135deg, var(--vin-primary-500), var(--vin-secondary-500), var(--vin-peachfuzz));
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -218,18 +222,39 @@ select:focus:not(:focus-visible) {
 }
 
 @keyframes orb-breathe {
-  0%, 100% { transform: scale(1); opacity: 0.6; }
-  50% { transform: scale(1.05); opacity: 1; }
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.02); opacity: 0.9; }
 }
 
 @keyframes orb-glow {
-  0%, 100% { opacity: 0.4; filter: blur(0px); }
-  50% { opacity: 0.8; filter: blur(1px); }
+  0%, 100% { opacity: 0.3; filter: blur(0px); }
+  50% { opacity: 0.6; filter: blur(0.5px); }
 }
 
 @keyframes orb-pulse {
-  0%, 100% { transform: scale(1); opacity: 0.5; }
-  50% { transform: scale(1.02); opacity: 0.9; }
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.01); opacity: 0.6; }
+}
+
+/* Gentle Aurora Orb Animations */
+@keyframes orb-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes orb-rotate-reverse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes orb-logo {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.02); }
+}
+
+@keyframes orb-shadow {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.05); }
 }
 
 /* Beautiful floating animations */
