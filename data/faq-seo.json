@@ -4,26 +4,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Hur skiljer sig engångsfix från prenumeration?",
+      "name": "Varför är er SEO så billig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Engångsfix skapar en stabil teknisk grund (meta-taggar, bilder, interna länkar, laddtid). Prenumeration (500 kr/mån) innebär löpande förbättringar och månadsrapporter."
+        "text": "Vi använder AI för att automatisera stora delar av analysen. Det betyder mindre manuellt arbete, men lika bra (eller bättre) resultat. Istället för att betala för dyra byråer med stora team, betalar du bara för det som faktiskt gör skillnad."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan ni garantera resultat?",
+      "name": "Kan jag få SEO även om jag redan har en hemsida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SEO är långsiktigt och exakta placeringar kan inte garanteras, särskilt när du utför arbetet själv. Vi garanterar tydlig vägledning och stöd som hjälper dig skapa goda resultat."
+        "text": "Ja! Vår SEO-prenumeration från 500 kr/mån fungerar oavsett om du byggt sidan hos oss eller inte."
       }
     },
     {
       "@type": "Question",
-      "name": "Vad är SEO Maskinen?",
+      "name": "Får jag se vad ni gjort varje månad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SEO Maskinen (seomaskin.se) är vårt AI-drivna SEO-verktyg som ger grundläggande förbättringsförslag. Vi kan implementera dessa åt dig eller hjälpa dig göra dem själv."
+        "text": "Ja. Du får en tydlig rapport som visar förändringar, trafik och förslag på nästa steg."
       }
     }
   ]

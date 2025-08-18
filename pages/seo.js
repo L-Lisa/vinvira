@@ -79,24 +79,24 @@ export default function SEOPage() {
     <>
       <SeoHead
         title="SEO för småföretagare – från 500 kr/mån | Vinvira"
-        description="Engångsfix eller prenumeration från 500 kr/mån. Tydliga rapporter, konkreta råd och stöd som hjälper dig skapa bra resultat."
+        description="Prisvärd SEO för småföretag. AI-driven analys, tydliga rapporter och smart optimering från 500 kr/mån. Få samma värde som dyra byråer – till en tredjedel av priset."
         canonical="https://vinvira.se/seo"
         schemaJson={serviceSchema}
       />
       
       {/* Hero Section */}
       <ServiceHero
-        title="AI-driven SEO för"
-        subtitle="tekniskt försprång"
-        description="Avancerad teknisk SEO-optimering med AI-analys och datadriven strategi. Från djupgående tekniska fixes till intelligenta ranking-strategier som levererar mätbara resultat för ditt företag."
-        serviceType="SEO & Teknisk Optimering"
+        title="SEO för småföretagare"
+        subtitle="från 500 kr/mån"
+        description="Slipp betala överpriser. Vi använder AI för att ge dig smartare SEO till en bråkdel av kostnaden. Snabb analys, tydliga förbättringsförslag och löpande optimering – utan krångel."
+        serviceType="SEO & teknisk optimering"
         icon={<SEOTargetIcon />}
         gradientColors={['from-vin-secondary-500', 'to-vin-peachfuzz']}
         ctaText="Få SEO-offert"
         ctaHref="#contact"
         customFeatures={[
-          "Billiga månadsprenumerationer eller större engångsfix",
-          "AI-driven teknisk analys"
+          "Samma resultat som dyra byråer",
+          "Tydliga rapporter utan tekniskt krångel"
         ]}
       />
 
@@ -116,7 +116,7 @@ export default function SEOPage() {
               transition={{duration:0.6}}
               className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
             >
-              Våra SEO-alternativ
+              Två enkla sätt att förbättra din SEO
             </motion.h2>
             <motion.p 
               initial={{opacity:0, y:20}} 
@@ -124,7 +124,7 @@ export default function SEOPage() {
               transition={{duration:0.6, delay:0.1}}
               className="text-vin-neutral-700 text-base sm:text-lg max-w-3xl mx-auto"
             >
-              Välj mellan teknisk engångsfix eller kontinuerlig optimering med AI-driven analys
+              Välj mellan en engångsfix eller löpande prenumeration – alltid AI-drivet och prisvärt
             </motion.p>
           </div>
           
@@ -162,7 +162,7 @@ export default function SEOPage() {
                     Teknisk Engångsfix
                   </h3>
                   <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
-                    Djupgående teknisk optimering med AI-analys: meta-taggar, bildkomprimering, interna länkar och prestandaförbättringar.
+                    Perfekt om du vill ha en snabb start. Vi gör en djupgående AI-analys och optimerar det viktigaste:
                   </p>
                   
                   <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
@@ -172,11 +172,11 @@ export default function SEOPage() {
                     </li>
                     <li className="flex items-center text-vin-neutral-600">
                       <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                      AI-driven bildoptimering
+                      Bildoptimering & laddningstid
                     </li>
                     <li className="flex items-center text-vin-neutral-600">
                       <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                      Core Web Vitals optimering
+                      Core Web Vitals & interna länkar
                     </li>
                   </ul>
                 </div>
@@ -213,10 +213,10 @@ export default function SEOPage() {
 
                 <div className="space-y-6">
                   <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-500">
-                    AI-driven Prenumeration
+                    SEO-prenumeration – från 500 kr/mån
                   </h3>
                   <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
-                    Från 500 kr/mån med kontinuerlig AI-analys, intelligenta ranking-strategier och detaljerade månadsrapporter.
+                    För dig som vill växa steg för steg. Vi analyserar din sida varje månad, justerar, och skickar rapporter du faktiskt förstår.
                   </p>
                   
                   <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
@@ -230,7 +230,7 @@ export default function SEOPage() {
                     </li>
                     <li className="flex items-center text-vin-neutral-600">
                       <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                      Automatiserade rapporter
+                      Månadsrapport med förbättringsförslag
                     </li>
                   </ul>
                 </div>
@@ -248,14 +248,14 @@ export default function SEOPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-vin-neutral-900">Betalar du över 3000 kr/mån för SEO idag?</h3>
-                <p className="text-vin-neutral-700">Låt oss jämföra — Det tycker vi är för mycket om man kan använda AI, prata med oss. Ofta kan vi leverera samma eller bättre värde för en tredjedel av priset.</p>
+                <p className="text-vin-neutral-700">Det tycker vi är onödigt. Med AI kan samma analys och optimering göras mer effektivt – vilket gör att vi kan leverera för en tredjedel av priset.<br/>👉 Boka ett gratis möte så jämför vi gärna vad du betalar idag.</p>
               </div>
             </div>
           </div>
 
           {/* Monthly Report Section */}
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-vin-neutral-900">Vad innehåller månadsrapporten?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-vin-neutral-900">Så här ser våra rapporter ut</h2>
             <div className="grid gap-4 sm:gap-6 md:grid-cols-3">
               <div className="p-4 sm:p-6 rounded-2xl bg-white border border-vin-neutral-200">
                 <div className="w-10 h-10 rounded-xl bg-vin-primary-100 flex items-center justify-center mb-3">
@@ -264,7 +264,7 @@ export default function SEOPage() {
                   </svg>
                 </div>
                 <h4 className="font-semibold mb-2 text-vin-neutral-900">Rankingförändringar</h4>
-                <p className="text-sm text-vin-neutral-600">För prioriterade sökord</p>
+                <p className="text-sm text-vin-neutral-600">Tydlig översikt på dina viktigaste sökord</p>
               </div>
               
               <div className="p-4 sm:p-6 rounded-2xl bg-white border border-vin-neutral-200">
@@ -274,7 +274,7 @@ export default function SEOPage() {
                   </svg>
                 </div>
                 <h4 className="font-semibold mb-2 text-vin-neutral-900">Trafik & beteende</h4>
-                <p className="text-sm text-vin-neutral-600">Detaljerad statistik</p>
+                <p className="text-sm text-vin-neutral-600">Statistik du förstår, utan krångliga termer</p>
               </div>
               
               <div className="p-4 sm:p-6 rounded-2xl bg-white border border-vin-accent-200">
@@ -284,7 +284,7 @@ export default function SEOPage() {
                   </svg>
                 </div>
                 <h4 className="font-semibold mb-2 text-vin-neutral-900">Förbättringsförslag</h4>
-                <p className="text-sm text-vin-neutral-600">Konkreta åtgärder</p>
+                <p className="text-sm text-vin-neutral-600">Konkreta tips på vad vi optimerar härnäst</p>
               </div>
             </div>
           </div>
@@ -310,9 +310,9 @@ export default function SEOPage() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-300">
-                      SEO Maskinen
+                      Testa SEO Maskinen gratis
                     </h3>
-                    <p className="text-sm text-vin-neutral-600">Vårt AI-drivna SEO-verktyg</p>
+                    <p className="text-sm text-vin-neutral-600">Vårt AI-drivna SEO-verktyg för småföretagare</p>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-vin-secondary-100 to-vin-primary-100 px-3 py-1 rounded-full border border-vin-secondary-200">
@@ -322,22 +322,22 @@ export default function SEOPage() {
 
               {/* Description */}
               <p className="text-vin-neutral-700 text-lg leading-relaxed mb-6 group-hover:text-vin-neutral-800 transition-colors duration-300">
-                Upptäck vårt enkla SEO-verktyg som ger dig grundläggande förbättringsförslag med AI-analys. Perfekt för småföretagare som vill ta kontroll över sin digitala närvaro.
+                Vill du snabbt se hur din sida mår? SEO Maskinen gör en grundläggande AI-analys och ger dig enkla förbättringsförslag direkt.
               </p>
 
               {/* Features */}
               <div className="grid gap-3 mb-8 sm:grid-cols-2">
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-vin-secondary-400 rounded-full" />
-                  <span className="text-sm text-vin-neutral-600">AI-driven webbplatsanalys</span>
+                  <span className="text-sm text-vin-neutral-600">Gratis att använda</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full" />
-                  <span className="text-sm text-vin-neutral-600">Enkla förbättringsförslag</span>
+                  <span className="text-sm text-vin-neutral-600">Snabb analys</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-vin-secondary-400 rounded-full" />
-                  <span className="text-sm text-vin-neutral-600">Gratis att använda</span>
+                  <span className="text-sm text-vin-neutral-600">Enkla tips för bättre ranking</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full" />
@@ -356,7 +356,7 @@ export default function SEOPage() {
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-primary-600 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300 group-hover:from-vin-secondary-500 group-hover:to-vin-primary-500"
                 >
-                  <span>Testa verktyget</span>
+                  <span>Testa verktyget gratis</span>
                   <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
@@ -373,7 +373,7 @@ export default function SEOPage() {
       <FAQ 
         data={faqData} 
         title="Vanliga frågor om SEO"
-        subtitle="Svar på de vanligaste frågorna om våra SEO-tjänster"
+        subtitle="Enkla svar – utan tekniskt krångel"
       />
 
       {/* Sticky CTA */}

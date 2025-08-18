@@ -4,18 +4,34 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Ingår domän och hosting?",
+      "name": "Vad kostar en hemsida hos er?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Det kan ingå beroende på behov och vald lösning. Vi hjälper dig att välja rätt."
+        "text": "Enkel sida från 5000 kr, mer omfattande lösning från 9500 kr. Du äger alltid din sida helt själv."
       }
     },
     {
       "@type": "Question",
-      "name": "Kan jag uppdatera min hemsida själv?",
+      "name": "Hur kan ni vara så prisvärda?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Välj antingen en stabil, underhållsfri lösning utan månadskostnader eller en användarvänlig plattform där du själv kan uppdatera innehållet. Vi guidar dig oavsett val."
+        "text": "Vi använder AI för att effektivisera arbetet. Det betyder samma kvalitet som hos en traditionell byrå – men till en bråkdel av priset."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ingår SEO i priset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, alla sidor vi bygger optimeras för SEO från början. Vill du ha löpande optimering kan du lägga till vår prenumeration från 500 kr/mån."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Måste jag teckna månadskostnad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nej. Du kan köpa en sida som engångskostnad och äga den helt själv. Månadskostnad är bara för dig som vill ha löpande support eller SEO."
       }
     }
   ]

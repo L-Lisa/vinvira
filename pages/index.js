@@ -25,8 +25,8 @@ export default function Home() {
   return (
     <>
       <SeoHead
-        title="Vinvira – Snabbt, prisvärd hemsida utan månadskostnad"
-        description="Snabba hemsidor utan månadskostnad, SEO från 500 kr/mån och administrativ support. Boka ett gratis startmöte idag."
+        title="Vinvira – Prisvärda AI-hemsidor utan månadskostnad"
+        description="Snabba, SEO-optimerade hemsidor från 5000 kr. Prenumerations-SEO från 500 kr/mån. Perfekt för småföretagare som vill synas online utan onödiga kostnader."
         canonical="https://vinvira.se/"
         schemaJson={schemaOrg}
       />
@@ -53,10 +53,10 @@ export default function Home() {
             className="max-w-xl mb-8 md:mb-0 py-8"
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-[1.05] gradient-text break-words">
-              Snabba AI-hemsidor – utan månadskostnad, redo på en vecka
+              Prisvärda AI-hemsidor för småföretagare – utan månadskostnad
             </h1>
             <p className="mt-6 text-white/90 text-base sm:text-lg leading-relaxed">
-              Prisvärda, snygga och fullt optimerade hemsidor för småföretagare och nyföretagare. Levererade snabbt – utan krångel.
+              Kom online snabbt med en modern hemsida som både kunder och Google älskar. Byggd med AI, redo på en vecka och utan dolda avgifter.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a 
@@ -111,27 +111,27 @@ export default function Home() {
             transition={{duration:0.6}}
             className="space-y-8"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-vin-neutral-900">Hur vi jobbar</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-vin-neutral-900">Så här hjälper vi dig</h2>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white flex items-center justify-center font-bold text-sm">1</div>
                 <div className="flex-1">
                   <div className="h-4 bg-gradient-to-r from-vin-primary-200 to-vin-secondary-200 rounded-full mb-2"></div>
-                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Gratis startmöte och planering. Du får även möjligheten att fylla i ett frågeformulär så kan vi mötas för att prata över ett första utkast.</p>
+                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Du berättar vad du vill ha – vi gör en tydlig plan och ger dig en offert direkt.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white flex items-center justify-center font-bold text-sm">2</div>
                 <div className="flex-1">
                   <div className="h-4 bg-gradient-to-r from-vin-primary-200 to-vin-secondary-200 rounded-full mb-2"></div>
-                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Design och utveckling, vi skapar en snygg och snabb hemsida som är optimerad för SEO och användarvänlighet. En revision ingår.</p>
+                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Vi bygger en snygg och snabb hemsida, optimerad för SEO. Du får se ett utkast och ge feedback.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white flex items-center justify-center font-bold text-sm">3</div>
                 <div className="flex-1">
                   <div className="h-4 bg-gradient-to-r from-vin-primary-200 to-vin-secondary-200 rounded-full mb-2"></div>
-                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Lansering och support. Beroende på omfattning kan vi hjälpa dig att lansera din hemsida och hålla den uppdaterad.</p>
+                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Din sida går live! Du får full äganderätt, och vill du ha hjälp med löpande SEO eller uppdateringar finns vi där.</p>
                 </div>
               </div>
             </div>
@@ -170,11 +170,24 @@ export default function Home() {
             transition={{duration:0.6}}
             className="space-y-6"
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-white">Vår filosofi</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">Varför välja Vinvira?</h2>
             <p className="text-vin-neutral-200 leading-relaxed text-base sm:text-lg">
-              Vi tror på enkla, effektiva lösningar som ger resultat. Ingen onödig komplexitet, 
-              bara smart teknik som hjälper ditt företag att växa online.
+              Vi tror på enkla, smarta lösningar som ger resultat. Istället för att ta överpriser för något AI redan kan effektivisera, erbjuder vi hemsidor och SEO som är:
             </p>
+            <div className="mt-6 space-y-3">
+              <div className="flex items-center text-vin-neutral-200">
+                <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                <span>Snabba att leverera</span>
+              </div>
+              <div className="flex items-center text-vin-neutral-200">
+                <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                <span>Prisvärda men professionella</span>
+              </div>
+              <div className="flex items-center text-vin-neutral-200">
+                <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                <span>Optimerade för att både människor och sökmotorer ska hitta dig</span>
+              </div>
+            </div>
             <div className="pt-4">
               <a 
                 href="#contact" 
@@ -209,7 +222,7 @@ export default function Home() {
             transition={{duration:0.6}}
             className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
           >
-            Våra tjänster
+            Tjänster som hjälper dig växa online
           </motion.h2>
           <motion.p 
             initial={{opacity:0, y:20}} 
@@ -237,7 +250,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-vin-neutral-900 group-hover:text-vin-primary-600 transition-colors duration-300">Webb & hemsida</h3>
-              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Snabba, stabila, enkla — utan månadskostnad. Vi skapar hemsidor som konverterar.</p>
+              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Snabba, stabila och optimerade – från 5000 kr. Perfekt för småföretagare som vill komma igång snabbt utan månadskostnad.</p>
               <a className="inline-flex items-center text-vin-primary-600 font-semibold hover:text-vin-primary-700 transition-colors duration-300 group-hover:translate-x-1" href="/webb">
                 Läs mer
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -262,7 +275,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-vin-neutral-900 group-hover:text-vin-secondary-600 transition-colors duration-300">SEO</h3>
-              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Engångsfix eller prenumeration från 500 kr/mån. Tydliga rapporter och strategisk rådgivning.</p>
+              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Engångsfix eller prenumeration från 500 kr/mån. Vi använder AI för att analysera, optimera och rapportera – enkelt för dig, effektivt för din sida.</p>
               <a className="inline-flex items-center text-vin-secondary-600 font-semibold hover:text-vin-secondary-700 transition-colors duration-300 group-hover:translate-x-1" href="/seo">
                 Läs mer
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -302,6 +315,157 @@ export default function Home() {
       {/* GRADIENT SEPARATOR */}
       <div className="h-px bg-gradient-to-r from-transparent via-vin-accent-300 to-transparent mx-4 sm:mx-6"></div>
 
+      {/* PRICING PACKAGES SECTION */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 bg-vin-neutral-50">
+        <div className="text-center mb-12 sm:mb-16">
+          <motion.h2 
+            initial={{opacity:0, y:20}} 
+            whileInView={{opacity:1, y:0}} 
+            transition={{duration:0.6}}
+            className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
+          >
+            Våra paket
+          </motion.h2>
+          <motion.p 
+            initial={{opacity:0, y:20}} 
+            whileInView={{opacity:1, y:0}} 
+            transition={{duration:0.6, delay:0.1}}
+            className="text-vin-neutral-700 text-base sm:text-lg max-w-2xl mx-auto"
+          >
+            Tydliga priser – utan dolda kostnader
+          </motion.p>
+        </div>
+        
+        <div className="grid gap-8 md:gap-12 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
+          {/* Package 1 */}
+          <motion.div 
+            initial={{opacity:0, y:30}} 
+            whileInView={{opacity:1, y:0}} 
+            transition={{duration:0.7}}
+            className="group relative"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-br from-vin-primary-400/30 via-vin-secondary-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+            <div className="relative bg-white border border-vin-neutral-200 rounded-3xl p-8 lg:p-10 h-full hover:bg-white/90 transition-all duration-500 hover:shadow-accessible-lg hover:-translate-y-2">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-vin-neutral-900 mb-2">Starta enkelt</h3>
+                <div className="text-3xl font-bold text-vin-primary-600 mb-4">från 5000 kr</div>
+                <p className="text-vin-neutral-600">Perfekt för: Lokala företag, konsulter, enklare tjänster</p>
+              </div>
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                  Upp till 5 sidor
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                  Grundläggande SEO-optimering
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                  1 revision ingår
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                  Klar på under en vecka
+                </li>
+              </ul>
+              
+              <a href="#contact" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300">
+                Boka gratis möte
+              </a>
+            </div>
+          </motion.div>
+          
+          {/* Package 2 */}
+          <motion.div 
+            initial={{opacity:0, y:30}} 
+            whileInView={{opacity:1, y:0}} 
+            transition={{duration:0.7, delay:0.1}}
+            className="group relative"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-br from-vin-secondary-400/30 via-vin-accent-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+            <div className="relative bg-white border border-vin-neutral-200 rounded-3xl p-8 lg:p-10 h-full hover:bg-white/90 transition-all duration-500 hover:shadow-accessible-lg hover:-translate-y-2">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-vin-neutral-900 mb-2">Växande företag</h3>
+                <div className="text-3xl font-bold text-vin-secondary-600 mb-4">från 9500 kr</div>
+                <p className="text-vin-neutral-600">Perfekt för: Växande företag, flera tjänster, mer innehåll</p>
+              </div>
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                  Upp till 10 sidor
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                  SEO-optimering med AI
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                  Basic copy ingår
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                  2 revisioner
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                  Lansering + support
+                </li>
+              </ul>
+              
+              <a href="#contact" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-accent-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300">
+                Boka gratis möte
+              </a>
+            </div>
+          </motion.div>
+          
+          {/* SEO Add-on */}
+          <motion.div 
+            initial={{opacity:0, y:30}} 
+            whileInView={{opacity:1, y:0}} 
+            transition={{duration:0.7, delay:0.2}}
+            className="group relative md:col-span-2 lg:col-span-1"
+          >
+            <div className="absolute -inset-4 bg-gradient-to-br from-vin-accent-400/30 via-vin-primary-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+            <div className="relative bg-white border border-vin-accent-300 rounded-3xl p-8 lg:p-10 h-full hover:bg-white/90 transition-all duration-500 hover:shadow-accessible-lg hover:-translate-y-2">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-vin-neutral-900 mb-2">SEO-prenumeration</h3>
+                <div className="text-3xl font-bold text-vin-accent-600 mb-4">från 500 kr/mån</div>
+                <p className="text-vin-neutral-600">Perfekt för dig som redan har en hemsida eller vill utveckla den löpande</p>
+              </div>
+              
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                  AI-driven analys
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                  Månadsrapporter
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                  Löpande optimering
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                  Ingen bindningstid
+                </li>
+              </ul>
+              
+              <a href="/seo" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-accent-600 to-vin-primary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-accent-300">
+                Läs mer om SEO
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* GRADIENT SEPARATOR */}
+      <div className="h-px bg-gradient-to-r from-transparent via-vin-accent-300 to-transparent mx-4 sm:mx-6"></div>
+
       {/* FAQ SECTION */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 bg-vin-neutral-50">
         <motion.div
@@ -327,12 +491,10 @@ export default function Home() {
               <div className="flex items-start justify-between">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-vin-neutral-900 mb-3 group-hover:text-vin-primary-600 transition-colors duration-300">
-                    Vad gör Vinvira?
+                    Varför är ni billigare än andra byråer?
                   </h3>
                   <p className="text-vin-neutral-700 leading-relaxed">
-                    Vi hjälper småföretagare och nyföretagare i Sverige med snabba hemsidor utan månadskostnader, 
-                    enkel SEO från 500 kr/mån och flexibel administrativ support. Vårt mål är att göra digital 
-                    närvaro tillgängligt för alla företag.
+                    Vi använder AI för att automatisera delar av arbetet, och vi har inte stora kontor eller avdelningar att försörja. Det betyder lägre kostnad för oss – och ett bättre pris för dig. Resultatet är detsamma: en professionell hemsida som är snabb, säker och SEO-optimerad.
                   </p>
                 </div>
                 <div className="ml-4 w-6 h-6 rounded-full bg-gradient-to-br from-vin-primary-500 to-vin-secondary-500 flex items-center justify-center flex-shrink-0">
@@ -354,12 +516,10 @@ export default function Home() {
               <div className="flex items-start justify-between">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-vin-neutral-900 mb-3 group-hover:text-vin-secondary-600 transition-colors duration-300">
-                    Hur snabbt kan jag få en hemsida?
+                    Vad gör Vinvira?
                   </h3>
                   <p className="text-vin-neutral-700 leading-relaxed">
-                    De enklaste sidorna är ofta klara på under en vecka, beroende på omfattning. 
-                    Vi prioriterar snabb leverans utan att kompromissa med kvalitet. 
-                    Komplexa projekt kan ta 2-3 veckor men vi håller dig uppdaterad under hela processen.
+                    Vi hjälper småföretagare i Sverige med prisvärda hemsidor, enkel SEO från 500 kr/mån och flexibel support.
                   </p>
                 </div>
                 <div className="ml-4 w-6 h-6 rounded-full bg-gradient-to-br from-vin-secondary-500 to-vin-accent-500 flex items-center justify-center flex-shrink-0">
@@ -381,12 +541,37 @@ export default function Home() {
               <div className="flex items-start justify-between">
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-vin-neutral-900 mb-3 group-hover:text-vin-accent-600 transition-colors duration-300">
+                    Hur snabbt kan jag få en hemsida?
+                  </h3>
+                  <p className="text-vin-neutral-700 leading-relaxed">
+                    En enkel sida kan vara klar på under en vecka. Mer omfattande projekt tar 2–3 veckor.
+                  </p>
+                </div>
+                <div className="ml-4 w-6 h-6 rounded-full bg-gradient-to-br from-vin-accent-500 to-vin-primary-500 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          
+          <motion.div
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            transition={{duration:0.6, delay:0.3}}
+            className="group"
+          >
+            <div className="bg-white border border-vin-neutral-200 rounded-2xl p-6 hover:bg-white/90 transition-all duration-300 hover:shadow-accessible hover:shadow-vin-accent-100">
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold text-vin-neutral-900 mb-3 group-hover:text-vin-accent-600 transition-colors duration-300">
                     Vad kostar en hemsida?
                   </h3>
                   <p className="text-vin-neutral-700 leading-relaxed">
-                    Vi erbjuder transparenta priser utan dolda kostnader. Enkel hemsida från 15 000 kr engångsbelopp, 
-                    ingen månadskostnad. SEO-tjänster från 500 kr/mån. Kontakta oss för en personlig offert 
-                    baserad på dina specifika behov.
+                    <strong>Enkel sida:</strong> från 5000 kr<br>
+                    <strong>Mer omfattande:</strong> från 9500 kr<br>
+                    <strong>SEO-prenumeration:</strong> från 500 kr/mån
                   </p>
                 </div>
                 <div className="ml-4 w-6 h-6 rounded-full bg-gradient-to-br from-vin-accent-500 to-vin-primary-500 flex items-center justify-center flex-shrink-0">
@@ -428,7 +613,7 @@ export default function Home() {
           transition={{duration:0.6}}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Redo att växa online?</h2>
-          <p className="text-vin-neutral-200 mb-8 max-w-2xl mx-auto text-base sm:text-lg">Fyll i formuläret eller mejla <a className="underline hover:text-vin-secondary-400 transition-colors" href="mailto:info@vinvira.se">info@vinvira.se</a>.</p>
+          <p className="text-vin-neutral-200 mb-8 max-w-2xl mx-auto text-base sm:text-lg">Boka ett gratis möte eller mejla oss på <a className="underline hover:text-vin-secondary-400 transition-colors" href="mailto:info@vinvira.se">info@vinvira.se</a>.</p>
           <a 
             href="mailto:info@vinvira.se" 
             className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"

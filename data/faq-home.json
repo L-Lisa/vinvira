@@ -4,10 +4,18 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Varför är ni billigare än andra byråer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi använder AI för att automatisera delar av arbetet, och vi har inte stora kontor eller avdelningar att försörja. Det betyder lägre kostnad för oss – och ett bättre pris för dig. Resultatet är detsamma: en professionell hemsida som är snabb, säker och SEO-optimerad."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Vad gör Vinvira?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vi hjälper småföretagare och nyföretagare i Sverige med snabba hemsidor utan månadskostnader, enkel SEO från 500 kr/mån och flexibel administrativ support."
+        "text": "Vi hjälper småföretagare i Sverige med prisvärda hemsidor, enkel SEO från 500 kr/mån och flexibel support."
       }
     },
     {
@@ -15,7 +23,15 @@
       "name": "Hur snabbt kan jag få en hemsida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De enklaste sidorna är ofta klara på under en vecka, beroende på omfattning."
+        "text": "En enkel sida kan vara klar på under en vecka. Mer omfattande projekt tar 2–3 veckor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad kostar en hemsida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enkel sida: från 5000 kr. Mer omfattande: från 9500 kr. SEO-prenumeration: från 500 kr/mån."
       }
     }
   ]
