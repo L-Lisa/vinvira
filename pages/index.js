@@ -17,7 +17,7 @@ export default function Home() {
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "info@vinvira.se",
+      "email": "hej@vinvira.se",
       "availableLanguage": ["Swedish"]
     }]
   };
@@ -613,9 +613,9 @@ export default function Home() {
           transition={{duration:0.6}}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Redo att växa online?</h2>
-          <p className="text-vin-neutral-200 mb-8 max-w-2xl mx-auto text-base sm:text-lg">Boka ett gratis möte eller mejla oss på <a className="underline hover:text-vin-secondary-400 transition-colors" href="mailto:info@vinvira.se">info@vinvira.se</a>.</p>
+          <p className="text-vin-neutral-200 mb-8 max-w-2xl mx-auto text-base sm:text-lg">Boka ett gratis möte eller <a className="underline hover:text-vin-secondary-400 transition-colors" href="mailto:hej@vinvira.se">mejla oss</a>.</p>
           <a 
-            href="mailto:info@vinvira.se" 
+            href="mailto:hej@vinvira.se" 
             className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
           >
             Kontakta oss

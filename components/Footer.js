@@ -33,7 +33,7 @@ export default function Footer() {
         <div>
           <div className="font-semibold mb-3 text-vin-neutral-800">Kontakt</div>
           <p className="text-sm text-vin-neutral-600">
-            E-post: <a href="mailto:info@vinvira.se" className="underline hover:text-vin-primary-600 transition-colors duration-200">info@vinvira.se</a>
+            E-post: <a href="mailto:hej@vinvira.se" className="underline hover:text-vin-primary-600 transition-colors duration-200">hej@vinvira.se</a>
           </p>
         </div>
       </div>

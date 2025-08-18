@@ -25,7 +25,7 @@ export default function SeoHead({
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "info@vinvira.se",
+      "email": "hej@vinvira.se",
       "availableLanguage": ["Swedish", "English"]
     },
     "sameAs": [
