@@ -159,10 +159,10 @@ export default function Projekt() {
           <div className="text-center pt-8">
             <p className="text-vin-neutral-600 mb-6">Vill du se vad vi kan göra för ditt företag?</p>
             <a 
-              href="#contact" 
+              href="mailto:hej@vinvira.se" 
               className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
             >
-              Boka gratis möte
+              Mejla oss
             </a>
           </div>
         </motion.div>

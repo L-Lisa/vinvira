@@ -248,7 +248,7 @@ export default function SEOPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-vin-neutral-900">Betalar du över 3000 kr/mån för SEO idag?</h3>
-                <p className="text-vin-neutral-700">Det tycker vi är onödigt. Med AI kan samma analys och optimering göras mer effektivt – vilket gör att vi kan leverera för en tredjedel av priset.<br />👉 Boka ett gratis möte så jämför vi gärna vad du betalar idag.</p>
+                <p className="text-vin-neutral-700">Det tycker vi är onödigt. Med AI kan samma analys och optimering göras mer effektivt – vilket gör att vi kan leverera för en tredjedel av priset.<br />👉 <a href="mailto:hej@vinvira.se" className="underline hover:text-vin-primary-600 transition-colors">Mejla oss</a> så jämför vi gärna vad du betalar idag.</p>
               </div>
             </div>
           </div>

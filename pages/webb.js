@@ -32,8 +32,8 @@ export default function Webb() {
         serviceType="Webbdesign"
         icon={<WebbIcon />}
         gradientColors={['from-vin-primary-500', 'to-vin-secondary-500']}
-        ctaText="Boka gratis möte"
-        ctaHref="#contact"
+        ctaText="Mejla oss"
+        ctaHref="mailto:hej@vinvira.se"
       />
 
       {/* Process Steps Section - Premium Design Showcase */}
@@ -376,7 +376,7 @@ export default function Webb() {
           transition={{duration:0.6, delay:0.1}}
           className="text-xl text-vin-primary-100 mb-8 max-w-2xl mx-auto"
         >
-          Boka ett gratis möte och låt oss diskutera hur vi kan hjälpa ditt företag att växa online
+          Mejla oss så diskuterar vi hur vi kan hjälpa ditt företag att växa online
         </motion.p>
         <motion.div
           initial={{opacity:0, y:20}} 
@@ -384,10 +384,10 @@ export default function Webb() {
           transition={{duration:0.6, delay:0.2}}
         >
           <a
-            href="#contact"
+            href="mailto:hej@vinvira.se"
             className="inline-flex items-center justify-center px-8 py-4 bg-white text-vin-primary-600 font-semibold rounded-full shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/50"
           >
-            Boka gratis möte
+            Mejla oss
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -451,8 +451,8 @@ export default function Webb() {
                 </li>
               </ul>
               
-              <a href="#contact" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300">
-                Boka gratis möte
+              <a href="mailto:hej@vinvira.se" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300">
+                Mejla oss
               </a>
             </div>
           </motion.div>
@@ -495,8 +495,8 @@ export default function Webb() {
                 </li>
               </ul>
               
-              <a href="#contact" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-accent-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300">
-                Boka gratis möte
+              <a href="mailto:hej@vinvira.se" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-accent-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300">
+                Mejla oss
               </a>
             </div>
           </motion.div>

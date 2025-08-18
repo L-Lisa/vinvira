@@ -60,10 +60,10 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a 
-                href="#contact" 
+                href="mailto:hej@vinvira.se" 
                 className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
               >
-                Boka gratis möte
+                Mejla oss
               </a>
               <a 
                 href="/webb" 
@@ -190,10 +190,10 @@ export default function Home() {
             </div>
             <div className="pt-4">
               <a 
-                href="#contact" 
+                href="mailto:hej@vinvira.se" 
                 className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
               >
-                Läs mer
+                Mejla oss
               </a>
             </div>
           </motion.div>
@@ -371,8 +371,8 @@ export default function Home() {
                 </li>
               </ul>
               
-              <a href="#contact" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300">
-                Boka gratis möte
+              <a href="mailto:hej@vinvira.se" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300">
+                Mejla oss
               </a>
             </div>
           </motion.div>
@@ -415,8 +415,8 @@ export default function Home() {
                 </li>
               </ul>
               
-              <a href="#contact" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-accent-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300">
-                Boka gratis möte
+              <a href="mailto:hej@vinvira.se" className="block w-full text-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-secondary-600 to-vin-accent-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-secondary-300">
+                Mejla oss
               </a>
             </div>
           </motion.div>
@@ -592,10 +592,10 @@ export default function Home() {
         >
           <p className="text-vin-neutral-600 mb-4">Har du fler frågor?</p>
           <a 
-            href="#contact" 
+            href="mailto:hej@vinvira.se" 
             className="inline-flex items-center text-vin-primary-600 font-semibold hover:text-vin-primary-700 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1"
           >
-            Kontakta oss
+            Mejla oss
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -613,12 +613,12 @@ export default function Home() {
           transition={{duration:0.6}}
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Redo att växa online?</h2>
-          <p className="text-vin-neutral-200 mb-8 max-w-2xl mx-auto text-base sm:text-lg">Boka ett gratis möte eller <a className="underline hover:text-vin-secondary-400 transition-colors" href="mailto:hej@vinvira.se">mejla oss</a>.</p>
+          <p className="text-vin-neutral-200 mb-8 max-w-2xl mx-auto text-base sm:text-lg"><a className="underline hover:text-vin-secondary-400 transition-colors" href="mailto:hej@vinvira.se">Mejla oss</a> så kan vi hjälpa dig att komma igång direkt.</p>
           <a 
             href="mailto:hej@vinvira.se" 
             className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
           >
-            Kontakta oss
+            Mejla oss
           </a>
         </motion.div>
       </section>
