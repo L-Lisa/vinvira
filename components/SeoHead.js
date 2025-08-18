@@ -99,6 +99,9 @@ export default function SeoHead({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="UTF-8" />
       
+      {/* Google Site Verification */}
+      <meta name="google-site-verification" content="OpFtJA8xCYMXeTAdn6KoektffO21yqLDUR7768R6tIE" />
+      
       {/* Canonical URL */}
       {canonical && <link rel="canonical" href={canonical} />}
       
