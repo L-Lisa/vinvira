@@ -569,8 +569,8 @@ export default function Home() {
                     Vad kostar en hemsida?
                   </h3>
                   <p className="text-vin-neutral-700 leading-relaxed">
-                    <strong>Enkel sida:</strong> från 5000 kr<br>
-                    <strong>Mer omfattande:</strong> från 9500 kr<br>
+                    <strong>Enkel sida:</strong> från 5000 kr<br />
+                    <strong>Mer omfattande:</strong> från 9500 kr<br />
                     <strong>SEO-prenumeration:</strong> från 500 kr/mån
                   </p>
                 </div>
