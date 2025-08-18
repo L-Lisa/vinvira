@@ -100,7 +100,7 @@ export default function SeoHead({
       <meta charSet="UTF-8" />
       
       {/* Google Site Verification */}
-      <meta name="google-site-verification" content="OpFtJA8xCYMXeTAdn6KoektffO21yqLDUR7768R6tIE" />
+      <meta name="google-site-verification" content="google-site-verification=OpFtJA8xCYMXeTAdn6KoektffO21yqLDUR7768R6tIE" />
       
       {/* Canonical URL */}
       {canonical && <link rel="canonical" href={canonical} />}
