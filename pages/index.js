@@ -63,10 +63,10 @@ export default function Home() {
                 href="mailto:hej@vinvira.se" 
                 className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white font-semibold shadow-accessible hover:shadow-accessible-lg transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
               >
-                Mejla oss
+                Boka gratis möte
               </a>
               <a 
-                href="/webb" 
+                href="#prispaket" 
                 className="inline-flex items-center justify-center rounded-full px-6 py-3 border border-white/20 bg-white/10 backdrop-blur hover:bg-white/15 text-white font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
               >
                 Se våra tjänster
@@ -113,27 +113,78 @@ export default function Home() {
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-vin-neutral-900">Så här hjälper vi dig</h2>
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
+              <motion.div 
+                className="flex items-start space-x-4"
+                initial={{opacity:0, x:-20}} 
+                whileInView={{opacity:1, x:0}} 
+                transition={{duration:0.8, delay:0.3}}
+              >
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white flex items-center justify-center font-bold text-sm">1</div>
                 <div className="flex-1">
-                  <div className="h-4 bg-gradient-to-r from-vin-primary-200 to-vin-secondary-200 rounded-full mb-2"></div>
-                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Du berättar vad du vill ha – vi gör en tydlig plan och ger dig en offert direkt.</p>
+                  <div className="relative h-4 bg-vin-neutral-200 rounded-full mb-2 overflow-hidden">
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 rounded-full"
+                      initial={{width: 0}}
+                      whileInView={{width: "100%"}}
+                      transition={{duration: 1.5, delay: 0.5, ease: "easeOut"}}
+                    />
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-r from-vin-primary-400 to-vin-secondary-400 rounded-full opacity-50"
+                      animate={{scale: [1, 1.05, 1]}}
+                      transition={{duration: 2, repeat: Infinity, ease: "easeInOut"}}
+                    />
+                  </div>
+                  <p className="text-vin-neutral-700 text-sm leading-relaxed">Berätta kort om din verksamhet i förväg – så kan vi träffas redan med relevanta idéer och en grund att bygga vidare på tillsammans.</p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-4">
+              </motion.div>
+              <motion.div 
+                className="flex items-start space-x-4"
+                initial={{opacity:0, x:-20}} 
+                whileInView={{opacity:1, x:0}} 
+                transition={{duration:0.8, delay:0.5}}
+              >
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white flex items-center justify-center font-bold text-sm">2</div>
                 <div className="flex-1">
-                  <div className="h-4 bg-gradient-to-r from-vin-primary-200 to-vin-secondary-200 rounded-full mb-2"></div>
+                  <div className="relative h-4 bg-vin-neutral-200 rounded-full mb-2 overflow-hidden">
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 rounded-full"
+                      initial={{width: 0}}
+                      whileInView={{width: "100%"}}
+                      transition={{duration: 1.5, delay: 0.8, ease: "easeOut"}}
+                    />
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-r from-vin-primary-400 to-vin-secondary-400 rounded-full opacity-50"
+                      animate={{scale: [1, 1.05, 1]}}
+                      transition={{duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3}}
+                    />
+                  </div>
                   <p className="text-vin-neutral-700 text-sm leading-relaxed">Vi bygger en snygg och snabb hemsida, optimerad för SEO. Du får se ett utkast och ge feedback.</p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-4">
+              </motion.div>
+              <motion.div 
+                className="flex items-start space-x-4"
+                initial={{opacity:0, x:-20}} 
+                whileInView={{opacity:1, x:0}} 
+                transition={{duration:0.8, delay:0.7}}
+              >
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white flex items-center justify-center font-bold text-sm">3</div>
                 <div className="flex-1">
-                  <div className="h-4 bg-gradient-to-r from-vin-primary-200 to-vin-secondary-200 rounded-full mb-2"></div>
+                  <div className="relative h-4 bg-vin-neutral-200 rounded-full mb-2 overflow-hidden">
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 rounded-full"
+                      initial={{width: 0}}
+                      whileInView={{width: "100%"}}
+                      transition={{duration: 1.5, delay: 1.1, ease: "easeOut"}}
+                    />
+                    <motion.div 
+                      className="absolute inset-0 bg-gradient-to-r from-vin-primary-400 to-vin-secondary-400 rounded-full opacity-50"
+                      animate={{scale: [1, 1.05, 1]}}
+                      transition={{duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6}}
+                    />
+                  </div>
                   <p className="text-vin-neutral-700 text-sm leading-relaxed">Din sida går live! Du får full äganderätt, och vill du ha hjälp med löpande SEO eller uppdateringar finns vi där.</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
           
@@ -146,12 +197,52 @@ export default function Home() {
             {/* Abstract UI Illustration */}
             <div className="absolute inset-4 bg-vin-neutral-900 rounded-2xl p-6">
               <div className="space-y-3">
-                <div className="h-3 bg-vin-primary-300/50 rounded-full"></div>
-                <div className="h-3 bg-vin-secondary-300/50 rounded-full w-3/4"></div>
-                <div className="h-3 bg-vin-accent-300/50 rounded-full w-1/2"></div>
+                <div className="relative h-3 bg-vin-neutral-800 rounded-full overflow-hidden">
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-vin-primary-400 to-vin-secondary-400 rounded-full"
+                    initial={{width: 0}}
+                    whileInView={{width: "85%"}}
+                    transition={{duration: 2, delay: 1, ease: "easeOut"}}
+                  />
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-vin-primary-300 to-vin-secondary-300 rounded-full opacity-60"
+                    animate={{scale: [1, 1.02, 1], opacity: [0.6, 0.8, 0.6]}}
+                    transition={{duration: 3, repeat: Infinity, ease: "easeInOut"}}
+                  />
+                </div>
+                <div className="relative h-3 bg-vin-neutral-800 rounded-full overflow-hidden">
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-vin-secondary-400 to-vin-accent-400 rounded-full"
+                    initial={{width: 0}}
+                    whileInView={{width: "70%"}}
+                    transition={{duration: 2, delay: 1.3, ease: "easeOut"}}
+                  />
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-vin-secondary-300 to-vin-accent-300 rounded-full opacity-60"
+                    animate={{scale: [1, 1.02, 1], opacity: [0.6, 0.8, 0.6]}}
+                    transition={{duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1}}
+                  />
+                </div>
+                <div className="relative h-3 bg-vin-neutral-800 rounded-full overflow-hidden">
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-vin-accent-400 to-vin-primary-400 rounded-full"
+                    initial={{width: 0}}
+                    whileInView={{width: "90%"}}
+                    transition={{duration: 2, delay: 1.6, ease: "easeOut"}}
+                  />
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-vin-accent-300 to-vin-primary-300 rounded-full opacity-60"
+                    animate={{scale: [1, 1.02, 1], opacity: [0.6, 0.8, 0.6]}}
+                    transition={{duration: 3, repeat: Infinity, ease: "easeInOut", delay: 2}}
+                  />
+                </div>
               </div>
               {/* Glowing orbs in illustration */}
-              <div className="absolute top-4 right-4 w-6 h-6 rounded-full bg-gradient-to-r from-vin-primary-400 to-vin-secondary-400 shadow-orb-glow"></div>
+              <motion.div 
+                className="absolute top-4 right-4 w-6 h-6 rounded-full bg-gradient-to-r from-vin-primary-400 to-vin-secondary-400 shadow-orb-glow"
+                animate={{scale: [1, 1.1, 1], rotate: [0, 180, 360]}}
+                transition={{duration: 4, repeat: Infinity, ease: "easeInOut"}}
+              />
               <div className="absolute bottom-4 left-4 w-4 h-4 rounded-full bg-gradient-to-r from-vin-secondary-400 to-vin-accent-400 shadow-orb-glow-highlight"></div>
             </div>
           </motion.div>
@@ -172,7 +263,7 @@ export default function Home() {
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white">Varför välja Vinvira?</h2>
             <p className="text-vin-neutral-200 leading-relaxed text-base sm:text-lg">
-              Vi tror på enkla, smarta lösningar som ger resultat. Istället för att ta överpriser för något AI redan kan effektivisera, erbjuder vi hemsidor och SEO som är:
+              Småföretagare förtjänar professionella hemsidor utan byråpriser. Med smart AI-teknik levererar vi samma kvalitet som de stora – men snabbare, billigare och utan krångel. Våra lösningar är:
             </p>
             <div className="mt-6 space-y-3">
               <div className="flex items-center text-vin-neutral-200">
@@ -193,7 +284,7 @@ export default function Home() {
                 href="mailto:hej@vinvira.se" 
                 className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
               >
-                Mejla oss
+                Boka gratis möte
               </a>
             </div>
           </motion.div>
@@ -250,7 +341,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-vin-neutral-900 group-hover:text-vin-primary-600 transition-colors duration-300">Webb & hemsida</h3>
-              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Snabba, stabila och optimerade – från 5000 kr. Perfekt för småföretagare som vill komma igång snabbt utan månadskostnad.</p>
+              <p className="text-vin-neutral-700 mb-6 leading-relaxed">Snabba, prisvärda och optimerade – från 5000 kr. Perfekt för småföretagare som vill komma igång snabbt utan månadskostnad.</p>
               <a className="inline-flex items-center text-vin-primary-600 font-semibold hover:text-vin-primary-700 transition-colors duration-300 group-hover:translate-x-1" href="/webb">
                 Läs mer
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -316,7 +407,7 @@ export default function Home() {
       <div className="h-px bg-gradient-to-r from-transparent via-vin-accent-300 to-transparent mx-4 sm:mx-6"></div>
 
       {/* PRICING PACKAGES SECTION */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 bg-vin-neutral-50">
+      <section id="prispaket" className="scroll-mt-24 max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 bg-vin-neutral-50">
         <div className="text-center mb-12 sm:mb-16">
           <motion.h2 
             initial={{opacity:0, y:20}} 
@@ -367,7 +458,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                  Klar på under en vecka
+                  Klar på under en vecka, med gratis hosting
                 </li>
               </ul>
               
@@ -407,11 +498,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                  2 revisioner
+                  2 revisioner & leverans enligt tidsplan
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                  Lansering + support
+                  Gratis hosting ingår
                 </li>
               </ul>
               
@@ -433,7 +524,7 @@ export default function Home() {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-vin-neutral-900 mb-2">SEO-prenumeration</h3>
                 <div className="text-3xl font-bold text-vin-accent-600 mb-4">från 500 kr/mån</div>
-                <p className="text-vin-neutral-600">Perfekt för dig som redan har en hemsida eller vill utveckla den löpande</p>
+                <p className="text-vin-neutral-600">För dig som vill förbättra din befintliga sida månadsvis</p>
               </div>
               
               <ul className="space-y-3 mb-8">
@@ -447,11 +538,15 @@ export default function Home() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
-                  Löpande optimering
+                  Löpande optimerings förslag
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
                   Ingen bindningstid
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                  Hjälper dig växa långsiktigt
                 </li>
               </ul>
               
@@ -618,7 +713,7 @@ export default function Home() {
             href="mailto:hej@vinvira.se" 
             className="inline-flex items-center justify-center rounded-full px-8 py-4 bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white font-semibold shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
           >
-            Mejla oss
+            Kontakta oss
           </a>
         </motion.div>
       </section>

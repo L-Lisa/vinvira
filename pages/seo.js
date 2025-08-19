@@ -86,14 +86,14 @@ export default function SEOPage() {
       
       {/* Hero Section */}
       <ServiceHero
-        title="SEO för småföretagare"
+        title="SEO för småföretag"
         subtitle="från 500 kr/mån"
         description="Slipp betala överpriser. Vi använder AI för att ge dig smartare SEO till en bråkdel av kostnaden. Snabb analys, tydliga förbättringsförslag och löpande optimering – utan krångel."
         serviceType="SEO & teknisk optimering"
         icon={<SEOTargetIcon />}
         gradientColors={['from-vin-secondary-500', 'to-vin-peachfuzz']}
         ctaText="Få SEO-offert"
-        ctaHref="#contact"
+        ctaHref="mailto:hej@vinvira.se"
         customFeatures={[
           "Samma resultat som dyra byråer",
           "Tydliga rapporter utan tekniskt krångel"
@@ -116,7 +116,7 @@ export default function SEOPage() {
               transition={{duration:0.6}}
               className="text-3xl sm:text-4xl font-bold text-vin-neutral-900 mb-4"
             >
-              Två enkla sätt att förbättra din SEO
+              Tre enkla sätt att förbättra din SEO
             </motion.h2>
             <motion.p 
               initial={{opacity:0, y:20}} 
@@ -124,11 +124,11 @@ export default function SEOPage() {
               transition={{duration:0.6, delay:0.1}}
               className="text-vin-neutral-700 text-base sm:text-lg max-w-3xl mx-auto"
             >
-              Välj mellan en engångsfix eller löpande prenumeration – alltid AI-drivet och prisvärt
+              Välj den lösning som passar dig bäst – från engångsfix till fullservice – alltid AI-drivet och prisvärt
             </motion.p>
           </div>
           
-          <div className="grid gap-8 md:gap-12 lg:gap-16 md:grid-cols-2">
+          <div className="grid gap-8 md:gap-12 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
             <motion.div 
               initial={{opacity:0, y:30}} 
               whileInView={{opacity:1, y:0}} 
@@ -236,6 +236,65 @@ export default function SEOPage() {
                 </div>
               </div>
             </motion.div>
+
+            {/* Third option - FULLSERVICE */}
+            <motion.div 
+              initial={{opacity:0, y:30}} 
+              whileInView={{opacity:1, y:0}} 
+              transition={{duration:0.7, delay:0.2}}
+              className="group relative"
+            >
+              <div className="absolute -inset-4 bg-gradient-to-br from-vin-accent-400/30 via-vin-primary-400/30 to-transparent rounded-3xl blur-2xl group-hover:blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+              <div className="relative bg-white/90 backdrop-blur-sm border border-vin-neutral-200/50 rounded-3xl p-8 lg:p-10 h-full transition-all duration-700 group-hover:bg-white group-hover:shadow-2xl group-hover:shadow-vin-accent-500/10 group-hover:-translate-y-4 group-hover:scale-105">
+                
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-gradient-to-br from-vin-accent-500 to-vin-accent-600 rounded-2xl font-bold text-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-xl transition-all duration-300">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-vin-accent-400 to-vin-accent-500 rounded-2xl blur-sm opacity-30 -z-10 group-hover:opacity-50 transition-opacity duration-300"></div>
+                  </div>
+                  <div className="relative">
+                    <div className="w-12 h-12 bg-gradient-to-br from-vin-accent-100 to-vin-accent-200 rounded-2xl flex items-center justify-center shadow-sm">
+                      <svg className="w-6 h-6 text-vin-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-vin-accent-100 to-vin-accent-200 rounded-2xl blur-sm opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300"></div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-vin-neutral-900 group-hover:text-vin-accent-600 transition-colors duration-500">
+                    SEO Fullservice – från 1000 kr/mån
+                  </h3>
+                  <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
+                    Du slipper allt jobb – vi analyserar, optimerar och implementerar medan du fokuserar på ditt företag. Perfekt för hemsidor vi byggt.
+                  </p>
+                  
+                  <ul className="space-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                      AI-analys + implementation
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                      Vi gör alla tekniska ändringar
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                      Månadsrapporter + kontinuerlig optimering
+                    </li>
+                    <li className="flex items-center text-vin-neutral-600">
+                      <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                      Perfekt för våra hemsidor
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
           </div>
 
           {/* Comparison Box */}
@@ -248,7 +307,7 @@ export default function SEOPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-vin-neutral-900">Betalar du över 3000 kr/mån för SEO idag?</h3>
-                <p className="text-vin-neutral-700">Det tycker vi är onödigt. Med AI kan samma analys och optimering göras mer effektivt – vilket gör att vi kan leverera för en tredjedel av priset.<br />👉 <a href="mailto:hej@vinvira.se" className="underline hover:text-vin-primary-600 transition-colors">Mejla oss</a> så jämför vi gärna vad du betalar idag.</p>
+                <p className="text-vin-neutral-700">Det tycker vi är onödigt. Med AI kan samma analys och optimering göras mer effektivt – vilket gör att vi kan leverera för en tredjedel av priset.<br />👉 <a href="mailto:hej@vinvira.se" className="underline hover:text-vin-primary-600 transition-colors">Boka ett gratis möte</a> så jämför vi gärna vad du betalar idag.</p>
               </div>
             </div>
           </div>

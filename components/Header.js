@@ -55,22 +55,22 @@ export default function Header() {
             SEO
           </a>
           <a 
-            href="/admin" 
-            className="text-vin-neutral-700 hover:text-vin-primary-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1"
+            /* href="/admin" 
+            className="text-vin-neutral-700 hover:text-vin-primary-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1" */
           >
-            Admin
+            {/* Admin (tillfälligt dold) */}
           </a>
           <a 
-            href="/projekt" 
-            className="text-vin-neutral-700 hover:text-vin-primary-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1"
+            /* href="/projekt" 
+            className="text-vin-neutral-700 hover:text-vin-primary-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1" */
           >
-            Projekt
+            {/* Projekt (tillfälligt dold) */}
           </a>
           <a 
             href="mailto:hej@vinvira.se" 
             className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
           >
-            Mejla oss
+            Boka möte
           </a>
         </nav>
 
@@ -116,25 +116,25 @@ export default function Header() {
               SEO
             </a>
             <a 
-              href="/admin" 
+              /* href="/admin" 
               className="block px-4 py-3 text-vin-neutral-700 hover:text-vin-primary-600 hover:bg-vin-neutral-50 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300"
-              onClick={closeMobileMenu}
+              onClick={closeMobileMenu} */
             >
-              Admin
+              {/* Admin (tillfälligt dold) */}
             </a>
             <a 
-              href="/projekt" 
+              /* href="/projekt" 
               className="block px-4 py-3 text-vin-neutral-700 hover:text-vin-primary-600 hover:bg-vin-neutral-50 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300"
-              onClick={closeMobileMenu}
+              onClick={closeMobileMenu} */
             >
-              Projekt
+              {/* Projekt (tillfälligt dold) */}
             </a>
             <a 
               href="mailto:hej@vinvira.se" 
               className="block px-4 py-3 text-vin-primary-600 font-semibold hover:text-vin-primary-700 hover:bg-vin-primary-50 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300"
               onClick={closeMobileMenu}
             >
-              Mejla oss
+              Boka möte
             </a>
           </div>
         </nav>

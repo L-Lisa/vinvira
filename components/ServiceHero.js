@@ -74,7 +74,7 @@ const ServiceHero = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight sm:leading-tight md:leading-snug lg:leading-snug break-words"
             >
               <span className="text-vin-neutral-900">{title}</span>
               <span className="block bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 bg-clip-text text-transparent">
@@ -133,7 +133,7 @@ const ServiceHero = ({
               {customFeatures ? (
                 customFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <div className={`w-2 h-2 rounded-full ${index === 0 ? 'bg-vin-success' : 'bg-vin-warning'}`} />
+                    <div className="w-2 h-2 rounded-full bg-vin-success" />
                     <span className="text-vin-neutral-600">{feature}</span>
                   </div>
                 ))
@@ -144,7 +144,7 @@ const ServiceHero = ({
                     <span className="text-vin-neutral-600">Ingen månadskostnad</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-vin-warning rounded-full" />
+                    <div className="w-2 h-2 bg-vin-success rounded-full" />
                     <span className="text-vin-neutral-600">Snabb leverans</span>
                   </div>
                 </>

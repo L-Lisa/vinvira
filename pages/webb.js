@@ -26,13 +26,13 @@ export default function Webb() {
       
       {/* Hero Section */}
       <ServiceHero
-        title="Snabba och prisvärda"
-        subtitle="hemsidor för småföretagare"
-        description="Starta starkt online med en hemsida byggd med AI – modern, SEO-optimerad och redo på en vecka. Betala en gång, äg för alltid – utan dyr månadskostnad."
+        title="Snabba & prisvärda"
+        subtitle="hemsidor för småföretag"
+        description="Din nya hemsida kan vara live nästa vecka. AI‑byggd, SEO-optimerad och redo att locka kunder. Betala en gång, äg den för alltid."
         serviceType="Webbdesign"
         icon={<WebbIcon />}
         gradientColors={['from-vin-primary-500', 'to-vin-secondary-500']}
-        ctaText="Mejla oss"
+        ctaText="Boka gratis möte"
         ctaHref="mailto:hej@vinvira.se"
       />
 
@@ -56,7 +56,7 @@ export default function Webb() {
               className="relative inline-block"
             >
               <div className="absolute -inset-2 bg-gradient-to-r from-vin-primary-500/20 via-vin-secondary-500/20 to-vin-peachfuzz/20 rounded-2xl blur-xl" />
-              <h2 id="process-heading" className="relative text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-vin-neutral-900 via-vin-primary-600 to-vin-secondary-600 bg-clip-text text-transparent">
+              <h2 id="process-heading" className="relative text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-vin-neutral-900 via-vin-primary-600 to-vin-secondary-600 bg-clip-text text-transparent leading-tight sm:leading-tight md:leading-snug lg:leading-snug">
                 Så här går det till
               </h2>
             </motion.div>
@@ -184,7 +184,7 @@ export default function Webb() {
                       Design & utkast
                     </h3>
                     <p className="text-vin-neutral-700 text-lg leading-relaxed group-hover:text-vin-neutral-800 transition-colors duration-300">
-                      Vi bygger en första version och du får ge feedback. Vi justerar tills du är nöjd.
+                      Vi designar utifrån dina behov och visar dig resultatet. Du får ge feedback och vi gör de justeringar som ingår i ditt paket. Enkelt, transparent och utan överraskningar.
                     </p>
                     
                     {/* Feature list */}
@@ -195,7 +195,7 @@ export default function Webb() {
                       </li>
                       <li className="flex items-center text-vin-neutral-600">
                         <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                        Obegränsade revideringar
+                        Revisioner enligt paket
                       </li>
                     </ul>
                   </div>
@@ -376,7 +376,7 @@ export default function Webb() {
           transition={{duration:0.6, delay:0.1}}
           className="text-xl text-vin-primary-100 mb-8 max-w-2xl mx-auto"
         >
-          Mejla oss så diskuterar vi hur vi kan hjälpa ditt företag att växa online
+          Boka ett gratis möte så diskuterar vi hur vi kan hjälpa ditt företag att växa online
         </motion.p>
         <motion.div
           initial={{opacity:0, y:20}} 
@@ -387,7 +387,7 @@ export default function Webb() {
             href="mailto:hej@vinvira.se"
             className="inline-flex items-center justify-center px-8 py-4 bg-white text-vin-primary-600 font-semibold rounded-full shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/50"
           >
-            Mejla oss
+            Boka gratis möte
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
@@ -439,15 +439,15 @@ export default function Webb() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                  SEO-optimering med AI
+                  Grundläggande SEO-optimering
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                  1 revision
+                  1 revision ingår
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                  Leverans på under en vecka
+                  Klar på under en vecka, med gratis hosting
                 </li>
               </ul>
               
@@ -469,7 +469,7 @@ export default function Webb() {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-vin-neutral-900 mb-2">Växande företag</h3>
                 <div className="text-3xl font-bold text-vin-secondary-600 mb-4">från 9500 kr</div>
-                <p className="text-vin-neutral-600">Perfekt för: E-handel, tjänsteföretag, flera tjänster</p>
+                <p className="text-vin-neutral-600">Perfekt för: Växande företag, flera tjänster, mer innehåll</p>
               </div>
               
               <ul className="space-y-3 mb-8">
@@ -487,11 +487,11 @@ export default function Webb() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                  2 revisioner
+                  2 revisioner & leverans enligt tidsplan
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                  Lansering + support
+                  Gratis hosting ingår
                 </li>
               </ul>
               
@@ -513,7 +513,7 @@ export default function Webb() {
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-vin-neutral-900 mb-2">SEO-prenumeration</h3>
                 <div className="text-3xl font-bold text-vin-accent-600 mb-4">från 500 kr/mån</div>
-                <p className="text-vin-neutral-600">För dig som vill fortsätta växa efter lansering – även om du redan har en hemsida</p>
+                <p className="text-vin-neutral-600">För dig som vill förbättra din befintliga sida månadsvis</p>
               </div>
               
               <ul className="space-y-3 mb-8">
@@ -527,11 +527,15 @@ export default function Webb() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
-                  Löpande optimering
+                  Löpande optimerings förslag
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
                   Ingen bindningstid
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-accent-400 rounded-full mr-3" />
+                  Hjälper dig växa långsiktigt
                 </li>
               </ul>
               
