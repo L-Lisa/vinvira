@@ -458,7 +458,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-center text-vin-neutral-700">
                   <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                  Klar på under en vecka, med gratis hosting
+                  Klar på under en vecka
+                </li>
+                <li className="flex items-center text-vin-neutral-700">
+                  <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                  Gratis hosting med din domän
                 </li>
               </ul>
               
