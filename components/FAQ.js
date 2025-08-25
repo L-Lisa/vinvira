@@ -75,7 +75,7 @@ export default function FAQ({ data, title = "Vanliga frågor", subtitle = "Svar 
       <div className="text-center mt-12">
         <p className="text-vin-neutral-600 mb-4">Har du fler frågor?</p>
         <a 
-          href="mailto:hej@vinvira.se" 
+          href="/kontakt" 
           className="inline-flex items-center text-vin-primary-600 font-semibold hover:text-vin-primary-700 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1"
         >
           Kontakta oss

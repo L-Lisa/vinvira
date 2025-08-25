@@ -103,16 +103,16 @@ export default function StickyCTA() {
         
         {/* Main CTA Button */}
         <a
-          href="mailto:hej@vinvira.se"
+          href="/kontakt"
           className={`inline-flex items-center justify-center px-8 py-4 font-semibold rounded-full transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-offset-2 ${
             isOnDarkBackground 
               ? 'bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 text-white focus-visible:ring-vin-primary-300' 
               : 'bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 text-white focus-visible:ring-vin-primary-200'
           }`}
-          aria-label="Boka gratis möte via mejl på hej@vinvira.se"
+          aria-label="Gå till kontaktsidan för att boka gratis möte"
         >
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           Boka gratis möte
         </a>
@@ -121,13 +121,13 @@ export default function StickyCTA() {
       {/* Quick Contact for Mobile - Fixed touch target size */}
       <div className="md:hidden mt-3 flex justify-center">
         <a
-          href="mailto:hej@vinvira.se"
+          href="/kontakt"
           className={`inline-flex items-center justify-center w-11 h-11 rounded-full border-2 transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
             isOnDarkBackground 
               ? 'bg-white border-vin-neutral-200 text-vin-neutral-700 hover:bg-vin-neutral-50 focus-visible:ring-vin-primary-300' 
               : 'bg-vin-neutral-800 border-vin-neutral-600 text-white hover:bg-vin-neutral-700 focus-visible:ring-vin-primary-200'
           }`}
-          aria-label="Skicka e-post till hej@vinvira.se"
+          aria-label="Gå till kontaktsidan"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

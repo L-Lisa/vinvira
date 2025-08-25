@@ -8,8 +8,8 @@ const ServiceHero = ({
   serviceType, 
   icon, 
   gradientColors = ['from-vin-primary-500', 'to-vin-secondary-500'],
-  ctaText = "Mejla oss",
-  ctaHref = "mailto:hej@vinvira.se",
+  ctaText = "Kontakta oss",
+  ctaHref = "/kontakt",
   customFeatures = null
 }) => {
   return (

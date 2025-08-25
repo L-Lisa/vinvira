@@ -73,7 +73,7 @@ export default function Header() {
             {/* Projekt (tillfälligt dold) */}
           </a>
           <a 
-            href="mailto:hej@vinvira.se" 
+            href="/kontakt" 
             className="px-4 py-2 rounded-full text-white bg-gradient-to-r from-vin-primary-600 to-vin-secondary-600 shadow-accessible hover:shadow-accessible-lg hover:scale-105 transition-all duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-vin-primary-300"
           >
             Boka möte
@@ -143,7 +143,7 @@ export default function Header() {
               {/* Projekt (tillfälligt dold) */}
             </a>
             <a 
-              href="mailto:hej@vinvira.se" 
+              href="/kontakt" 
               className="block px-4 py-3 text-vin-primary-600 font-semibold hover:text-vin-primary-700 hover:bg-vin-primary-50 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300"
               onClick={closeMobileMenu}
             >

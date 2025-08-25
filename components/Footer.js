@@ -101,13 +101,13 @@ export default function Footer() {
                   Få en kostnadsfri konsultation och se hur vi kan hjälpa ditt företag växa online.
                 </p>
                 <a 
-                  href="mailto:hej@vinvira.se"
+                  href="/kontakt"
                   className="group inline-flex items-center justify-center w-full bg-gradient-to-r from-vin-primary-500 to-vin-secondary-500 hover:from-vin-primary-400 hover:to-vin-secondary-400 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-vin-primary-500/25"
                 >
                   <svg className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  Mejla oss
+                  Kontakta oss
                 </a>
                 <p className="text-vin-neutral-400 text-xs mt-3 text-center">
                   <a href="mailto:hej@vinvira.se" className="hover:text-vin-primary-400 transition-colors">hej@vinvira.se</a>
