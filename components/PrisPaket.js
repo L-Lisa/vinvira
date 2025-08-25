@@ -53,7 +53,10 @@ const PrisPaket = ({
               </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                SEO-optimering med AI, för AI och människor
+AI optimerad SEO              </li>
+              <li className="flex items-center text-vin-neutral-700">
+                <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                Basic copy ingår
               </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
@@ -65,7 +68,11 @@ const PrisPaket = ({
               </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
-                Gratis hosting med din egna domän
+                Möjlighet till gratis hosting
+              </li>
+              <li className="flex items-center text-vin-neutral-700">
+                <div className="w-2 h-2 bg-vin-primary-400 rounded-full mr-3" />
+                Hjälp med domänregistrering 
               </li>
             </ul>
             
@@ -97,19 +104,26 @@ const PrisPaket = ({
               </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                SEO-optimering med AI, för AI och människor
-              </li>
+                AI optimerad SEO              </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
                 Basic copy ingår
               </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                2 revisioner & leverans enligt tidsplan
+                2 revisioner ingår 
               </li>
               <li className="flex items-center text-vin-neutral-700">
                 <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
-                                  Gratis hosting med din egna domän
+                Leverans enligt tidsplan
+              </li>
+              <li className="flex items-center text-vin-neutral-700">
+                <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                Möjlighet till gratis hosting
+              </li>
+              <li className="flex items-center text-vin-neutral-700">
+                <div className="w-2 h-2 bg-vin-secondary-400 rounded-full mr-3" />
+                Hjälp med domänregistrering 
               </li>
             </ul>
             
