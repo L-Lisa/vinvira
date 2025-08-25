@@ -84,9 +84,7 @@ export default function Footer() {
                 <li className="text-sm">
                   <span className="text-white font-medium">SEO:</span> från 500 kr/mån
                 </li>
-                <li className="text-sm">
-                  <span className="text-white font-medium">Fullservice:</span> från 1.000 kr/mån
-                </li>
+
                 <li>
                   <a href="/" className="text-vin-primary-400 hover:text-vin-primary-300 text-sm underline transition-colors">
                     Se alla paket →

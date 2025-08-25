@@ -55,6 +55,12 @@ export default function Header() {
             SEO
           </a>
           <a 
+            href="/kontakt" 
+            className="text-vin-neutral-700 hover:text-vin-primary-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1"
+          >
+            Kontakt
+          </a>
+          <a 
             /* href="/admin" 
             className="text-vin-neutral-700 hover:text-vin-primary-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-md px-2 py-1" */
           >
@@ -114,6 +120,13 @@ export default function Header() {
               onClick={closeMobileMenu}
             >
               SEO
+            </a>
+            <a 
+              href="/kontakt" 
+              className="block px-4 py-3 text-vin-neutral-700 hover:text-vin-primary-600 hover:bg-vin-neutral-50 rounded-lg transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300"
+              onClick={closeMobileMenu}
+            >
+              Kontakt
             </a>
             <a 
               /* href="/admin" 

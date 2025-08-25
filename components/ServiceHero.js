@@ -115,12 +115,7 @@ const ServiceHero = ({
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
-              <a
-                href="#learn-more"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-vin-primary-700 font-medium hover:text-vin-primary-800 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-vin-primary-300 focus-visible:rounded-full"
-              >
-                Läs mer
-              </a>
+
             </motion.div>
 
             {/* Feature Points */}
